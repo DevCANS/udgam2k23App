@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.udgam2k23">
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
    <application
+    
         android:label="udgam2k23"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
