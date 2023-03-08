@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:udgam2k23/screens/home/home_screen.dart';
+import 'package:udgam2k23/general.dart';
 
 void main() {
   // WidgetsFlutterBinding.ensureInitialized();
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const General(),
     );
   }
 }

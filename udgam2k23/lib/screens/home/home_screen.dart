@@ -8,9 +8,11 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/methods.dart';
+import 'package:udgam2k23/screens/about/about_screen.dart';
+import 'package:udgam2k23/screens/events/events_screen.dart';
+import 'package:udgam2k23/screens/gallery/gallery_screen.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card1.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card2.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -28,8 +30,6 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
   final CarouselController carouselController = CarouselController();
   int currentIndex = 0;
-  // int _page = 0;
-  final GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -242,32 +242,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: CurvedNavigationBar(
-        key: _bottomNavigationKey,
-        animationCurve: Curves.easeOut,
-        color: backgroundColor,
-        height: 58,
-        backgroundColor: Colors.white,
-        items: [
-          Icon(
-            Icons.home,
-            size: size.height * 0.04,
-          ),
-          Icon(
-            Icons.calendar_month,
-            size: size.height * 0.04,
-          ),
-          Icon(
-            Icons.image,
-            size: size.height * 0.04,
-          ),
-          Icon(
-            Icons.info_rounded,
-            size: size.height * 0.04,
-          ),
-        ],
-        onTap: (index) {},
       ),
     );
   }
