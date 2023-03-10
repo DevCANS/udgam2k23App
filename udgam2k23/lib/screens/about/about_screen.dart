@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 
 class AboutScreen extends StatefulWidget {
@@ -21,7 +22,7 @@ class _AboutScreenState extends State<AboutScreen> {
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
                 height: size.height * 0.05,
@@ -38,19 +39,72 @@ class _AboutScreenState extends State<AboutScreen> {
                     left: size.width * 0.02,
                   ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Image.asset(
-                        "assets/images/udgam.png",
-                      ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.person_3_rounded,
-                        ),
+                        "assets/images/about.png",
                       ),
                     ],
                   ),
+                ),
+              ),
+              SizedBox(
+                height: size.height * 0.02,
+              ),
+              Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(
+                    15,
+                  ),
+                  child: SizedBox(
+                    height: size.height * 0.35,
+                    width: size.width * 0.65,
+                    child: Image.asset(
+                      "assets/images/udgam_p.png",
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: size.height * 0.02,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "About Udgam",
+                    style: GoogleFonts.berkshireSwash(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 24,
+                    ),
+                  ),
+                  Divider(
+                    color: dividerColor,
+                    thickness: size.height * 0.01,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+              Text(
+                "NIT Sikkim has been pioneering to bring about a new way\nof learning in the campus. NIT SIKKM has continuously\nbridged academics to home their skills and talents to\nevolve.",
+                maxLines: 4,
+                textAlign: TextAlign.center,
+                style: GoogleFonts.poppins(
+                  fontSize: 12,
+                ),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+              Text(
+                "UDGAM is the magnificent annual cultural fest of NIT\nSIKKIM, a heart-throb fest of Kanchenjunga, a complete\nfeast for its participants and a matter of ecstasy for all its\nstudents. Offering a vivid blend of music, art, dance,\ntalent and enthralling events of the fest all brimming with\ncraziness, weirdness, wackiness and never ending\nentertainment. A room for roar, laugh and giggle.",
+                maxLines: 7,
+                textAlign: TextAlign.center,
+                style: GoogleFonts.poppins(
+                  fontSize: 12,
                 ),
               ),
             ],

@@ -26,7 +26,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: size.height * 0.05,
+                height: size.height * 0.03,
               ),
               Container(
                 decoration: BoxDecoration(
