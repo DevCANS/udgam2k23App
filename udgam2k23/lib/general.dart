@@ -29,24 +29,24 @@ class _GeneralState extends State<General> {
       bottomNavigationBar: CurvedNavigationBar(
         animationCurve: Curves.easeOut,
         color: backgroundColor,
-        height: 58,
+        height: 60,
         backgroundColor: Colors.white,
         items: [
           Icon(
             Icons.home,
-            size: size.height * 0.04,
+            size: size.height * 0.03,
           ),
           Icon(
             Icons.calendar_month,
-            size: size.height * 0.04,
+            size: size.height * 0.03,
           ),
           Icon(
             Icons.image,
-            size: size.height * 0.04,
+            size: size.height * 0.03,
           ),
           Icon(
             Icons.info_rounded,
-            size: size.height * 0.04,
+            size: size.height * 0.03,
           ),
         ],
         onTap: _onTap,
