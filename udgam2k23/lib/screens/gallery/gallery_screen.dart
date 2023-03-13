@@ -15,6 +15,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
+      // ignore: sized_box_for_whitespace
       body: Container(
         height: size.height * 0.91,
         child: SingleChildScrollView(
@@ -28,9 +29,10 @@ class _GalleryScreenState extends State<GalleryScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
-                  height: size.height * 0.03,
+                  height: size.height * 0.05,
                 ),
                 Container(
+                  height: size.height * 0.065,
                   decoration: BoxDecoration(
                     color: backgroundColor,
                     borderRadius: BorderRadius.circular(
@@ -42,10 +44,15 @@ class _GalleryScreenState extends State<GalleryScreen> {
                       left: size.width * 0.02,
                     ),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Image.asset(
-                          "assets/images/gallery.png",
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: const [
+                        Text(
+                          "gallery",
+                          style: TextStyle(
+                            fontFamily: 'Samarkan',
+                            fontSize: 30,
+                            fontWeight: FontWeight.w500,
+                          ),
                         ),
                       ],
                     ),

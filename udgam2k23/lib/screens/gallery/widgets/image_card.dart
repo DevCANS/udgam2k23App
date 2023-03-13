@@ -25,7 +25,10 @@ class ImageCard extends StatelessWidget {
           showImageViewer(
             context,
             Image.asset(imagePath).image,
-            swipeDismissible: false,
+            swipeDismissible: true,
+            doubleTapZoomable: true,
+            useSafeArea: false,
+            immersive: false,
           );
         },
         child: Image.asset(

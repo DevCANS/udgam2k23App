@@ -1,16 +1,11 @@
 // ignore_for_file: avoid_print
 
-import 'package:carousel_slider/carousel_controller.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/methods.dart';
-import 'package:udgam2k23/screens/about/about_screen.dart';
-import 'package:udgam2k23/screens/events/events_screen.dart';
-import 'package:udgam2k23/screens/gallery/gallery_screen.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card1.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card2.dart';
 
@@ -34,6 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
+      // ignore: sized_box_for_whitespace
       body: Container(
         height: size.height * 0.91,
         child: SingleChildScrollView(
@@ -63,8 +59,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Image.asset(
-                          "assets/images/udgam.png",
+                        const Text(
+                          "udgam 2k23",
+                          style: TextStyle(
+                            fontFamily: 'Samarkan',
+                            fontSize: 30,
+                            fontWeight: FontWeight.w500,
+                          ),
                         ),
                         IconButton(
                           onPressed: () {},
@@ -125,14 +126,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Text(
                       "featured events",
-                      style: TextStyle(
-                        fontFamily: 'Samarkan',
+                      style: GoogleFonts.berkshireSwash(
+                        fontWeight: FontWeight.w500,
                         fontSize: 24,
                       ),
-                      // style: GoogleFonts.berkshireSwash(
-                      //   fontWeight: FontWeight.w500,
-                      //   fontSize: 24,
-                      // ),
                     ),
                     Divider(
                       color: dividerColor,
@@ -181,14 +178,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Text(
                       "visit us",
-                      style: TextStyle(
-                        fontFamily: 'Samarkan',
+                      style: GoogleFonts.berkshireSwash(
+                        fontWeight: FontWeight.w500,
                         fontSize: 24,
                       ),
-                      // style: GoogleFonts.berkshireSwash(
-                      //   fontWeight: FontWeight.w500,
-                      //   fontSize: 24,
-                      // ),
                     ),
                     Divider(
                       color: dividerColor,

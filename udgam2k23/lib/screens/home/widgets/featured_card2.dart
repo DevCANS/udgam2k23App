@@ -28,6 +28,7 @@ class FeaturedCard2 extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              // ignore: sized_box_for_whitespace
               Container(
                 height: size.height * 0.14,
                 child: Image.asset(

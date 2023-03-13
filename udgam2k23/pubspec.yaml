@@ -1,9 +1,9 @@
 name: udgam2k23
 description: The UDGAM app - your go-to guide for our college's cultural fest!
-              Get schedules and real-time updates on events and performances.
-              Register and buy tickets through the app, and create a personalized schedule.
-              Connect with other attendees and share your experiences.
-              Available for iOS and Android, and accessible to all.
+  Get schedules and real-time updates on events and performances. Register and
+  buy tickets through the app, and create a personalized schedule. Connect with
+  other attendees and share your experiences. Available for iOS and Android, and
+  accessible to all.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -22,13 +22,13 @@ dependencies:
   flutter_staggered_grid_view: ^0.6.2
   font_awesome_flutter: ^10.4.0
   google_fonts: ^4.0.3
+  insta_image_viewer: ^1.0.2
   url_launcher: ^6.1.10
 
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-
 
 flutter:
 
