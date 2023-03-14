@@ -28,6 +28,7 @@ class _AboutScreenState extends State<AboutScreen> {
                 height: size.height * 0.05,
               ),
               Container(
+                height: size.height * 0.065,
                 decoration: BoxDecoration(
                   color: backgroundColor,
                   borderRadius: BorderRadius.circular(
@@ -40,9 +41,14 @@ class _AboutScreenState extends State<AboutScreen> {
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Image.asset(
-                        "assets/images/about.png",
+                    children: const [
+                      Text(
+                        "gallery",
+                        style: TextStyle(
+                          fontFamily: 'Samarkan',
+                          fontSize: 30,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ],
                   ),
