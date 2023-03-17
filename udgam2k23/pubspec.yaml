@@ -41,6 +41,7 @@ flutter:
   assets:
     - assets/carousel/
     - assets/gallery/
+    - assets/auth/
     - assets/images/
     - assets/featured_events/
   #   - images/a_dot_ham.jpeg

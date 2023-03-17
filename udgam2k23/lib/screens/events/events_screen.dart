@@ -27,6 +27,7 @@ class _EventsScreenState extends State<EventsScreen> {
                 height: size.height * 0.05,
               ),
               Container(
+                height: size.height * 0.065,
                 decoration: BoxDecoration(
                   color: backgroundColor,
                   borderRadius: BorderRadius.circular(
@@ -39,14 +40,13 @@ class _EventsScreenState extends State<EventsScreen> {
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Image.asset(
-                        "assets/images/udgam.png",
-                      ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.person_3_rounded,
+                    children: const [
+                      Text(
+                        "events",
+                        style: TextStyle(
+                          fontFamily: 'Samarkan',
+                          fontSize: 30,
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
                     ],

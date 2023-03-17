@@ -4,8 +4,6 @@ import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/methods.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
-
 class AboutScreen extends StatefulWidget {
   const AboutScreen({super.key});
 
@@ -33,7 +31,6 @@ class _AboutScreenState extends State<AboutScreen> {
                 height: size.height * 0.05,
               ),
 
-
               Container(
                 decoration: BoxDecoration(
                   color: backgroundColor,
@@ -56,12 +53,10 @@ class _AboutScreenState extends State<AboutScreen> {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-
                     ],
                   ),
                 ),
               ),
-
 
               SizedBox(
                 height: size.height * 0.02,
@@ -127,270 +122,214 @@ class _AboutScreenState extends State<AboutScreen> {
               ),
 
               Container(
-                  decoration: BoxDecoration(
-
-                    gradient: linearGrad1,
-                    borderRadius: BorderRadius.circular(
-                      10,
-                    ),
+                decoration: BoxDecoration(
+                  gradient: linearGrad1,
+                  borderRadius: BorderRadius.circular(
+                    10,
                   ),
-                  height: size.height*0.25,
-
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-
-                              Container(
-                                height: size.height*0.07,
-                                width:size.height*0.07 ,
+                ),
+                height: size.height * 0.25,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                                height: size.height * 0.07,
+                                width: size.height * 0.07,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(100),
                                 ),
                                 child: const CircleAvatar(
-                                  backgroundImage: AssetImage("assets/featured_events/fev1.png"),
-                                )
+                                  backgroundImage: AssetImage(
+                                      "assets/featured_events/fev1.png"),
+                                )),
+                            Text(
+                              "Namaewa name",
+                              style: GoogleFonts.poppins(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
                               ),
-
-
-
-                                Text(
-                                  "Namaewa name",
-                                  style: GoogleFonts.poppins(
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                  ),
+                            ),
+                            Text(
+                              "Kaizoku",
+                              style: GoogleFonts.poppins(
+                                fontSize: 8,
+                                fontWeight: FontWeight.w400,
                               ),
-                              Text(
-                                "Kaizoku",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 8,
-                                  fontWeight: FontWeight.w400,
+                            ),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                                height: size.height * 0.07,
+                                width: size.height * 0.07,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
                                 ),
+                                child: const CircleAvatar(
+                                  backgroundImage: AssetImage(
+                                      "assets/featured_events/fev1.png"),
+                                )),
+                            Text(
+                              "Namaewa name",
+                              style: GoogleFonts.poppins(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
                               ),
-
-                                  
-                            ],
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-
-                              Container(
-                                  height: size.height*0.07,
-                                  width:size.height*0.07 ,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(100),
-                                  ),
-                                  child: const CircleAvatar(
-                                    backgroundImage: AssetImage("assets/featured_events/fev1.png"),
-                                  )
+                            ),
+                            Text(
+                              "Kaizoku",
+                              style: GoogleFonts.poppins(
+                                fontSize: 8,
+                                fontWeight: FontWeight.w400,
                               ),
-
-
-
-                              Text(
-                                "Namaewa name",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w500,
+                            ),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                                height: size.height * 0.07,
+                                width: size.height * 0.07,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
                                 ),
+                                child: const CircleAvatar(
+                                  backgroundImage: AssetImage(
+                                      "assets/featured_events/fev1.png"),
+                                )),
+                            Text(
+                              "Namaewa name",
+                              style: GoogleFonts.poppins(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
                               ),
-                              Text(
-                                "Kaizoku",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 8,
-                                  fontWeight: FontWeight.w400,
+                            ),
+                            Text(
+                              "Kaizoku",
+                              style: GoogleFonts.poppins(
+                                fontSize: 8,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: size.height * 0.015,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                                height: size.height * 0.07,
+                                width: size.height * 0.07,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
                                 ),
+                                child: const CircleAvatar(
+                                  backgroundImage: AssetImage(
+                                      "assets/featured_events/fev1.png"),
+                                )),
+                            Text(
+                              "Namaewa name",
+                              style: GoogleFonts.poppins(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
                               ),
-
-
-                            ],
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-
-                              Container(
-                                  height: size.height*0.07,
-                                  width:size.height*0.07 ,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(100),
-                                  ),
-                                  child: const CircleAvatar(
-                                    backgroundImage: AssetImage("assets/featured_events/fev1.png"),
-                                  )
+                            ),
+                            Text(
+                              "Kaizoku",
+                              style: GoogleFonts.poppins(
+                                fontSize: 8,
+                                fontWeight: FontWeight.w400,
                               ),
-
-
-
-                              Text(
-                                "Namaewa name",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w500,
+                            ),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                                height: size.height * 0.07,
+                                width: size.height * 0.07,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
                                 ),
+                                child: const CircleAvatar(
+                                  backgroundImage: AssetImage(
+                                      "assets/featured_events/fev1.png"),
+                                )),
+                            Text(
+                              "Namaewa name",
+                              style: GoogleFonts.poppins(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
                               ),
-                              Text(
-                                "Kaizoku",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 8,
-                                  fontWeight: FontWeight.w400,
+                            ),
+                            Text(
+                              "Kaizoku",
+                              style: GoogleFonts.poppins(
+                                fontSize: 8,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                                height: size.height * 0.07,
+                                width: size.height * 0.07,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
                                 ),
+                                child: const CircleAvatar(
+                                  backgroundImage: AssetImage(
+                                      "assets/featured_events/fev1.png"),
+                                )),
+                            Text(
+                              "Namaewa name",
+                              style: GoogleFonts.poppins(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
                               ),
-
-
-                            ],
-                          ),
-
-
-
-                        ],
-                      ),
-                      SizedBox(
-                        height: size.height*0.015,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-
-                              Container(
-                                  height: size.height*0.07,
-                                  width:size.height*0.07 ,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(100),
-                                  ),
-                                  child: const CircleAvatar(
-                                    backgroundImage: AssetImage("assets/featured_events/fev1.png"),
-                                  )
+                            ),
+                            Text(
+                              "Kaizoku",
+                              style: GoogleFonts.poppins(
+                                fontSize: 8,
+                                fontWeight: FontWeight.w400,
                               ),
-
-
-
-                              Text(
-                                "Namaewa name",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                              Text(
-                                "Kaizoku",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 8,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-
-
-                            ],
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-
-                              Container(
-                                  height: size.height*0.07,
-                                  width:size.height*0.07 ,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(100),
-                                  ),
-                                  child: const CircleAvatar(
-                                    backgroundImage: AssetImage("assets/featured_events/fev1.png"),
-                                  )
-                              ),
-
-
-
-                              Text(
-                                "Namaewa name",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                              Text(
-                                "Kaizoku",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 8,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-
-
-                            ],
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-
-                              Container(
-                                  height: size.height*0.07,
-                                  width:size.height*0.07 ,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(100),
-                                  ),
-                                  child: const CircleAvatar(
-                                    backgroundImage: AssetImage("assets/featured_events/fev1.png"),
-                                  )
-                              ),
-
-
-
-                              Text(
-                                "Namaewa name",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                              Text(
-                                "Kaizoku",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 8,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ),
-
-
-                            ],
-                          ),
-
-
-
-                        ],
-                      ),
-
-                    ],
-                  ),
-
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
+              ),
 
-
-
-
-
-
-
-
-            //About Contributors
+              //About Contributors
               SizedBox(
                 height: size.height * 0.02,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
-
                 children: [
                   Text(
                     "About Contributors",
@@ -411,85 +350,77 @@ class _AboutScreenState extends State<AboutScreen> {
                 height: size.height * 0.01,
               ),
 
-             Row(
-
-               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-               children:[
-                 Row(
-                   mainAxisAlignment: MainAxisAlignment.start,
-                   children :[
-                     Container(
-                       decoration: BoxDecoration(
-
-                         gradient: linearGrad1,
-                         borderRadius: BorderRadius.circular(
-                           10,
-                         ),
-                       ),
-                       height: size.height * 0.065,
-                       width: size.width*0.45,
-
-                       child: Padding(
-                         padding: EdgeInsets.only(
-                           left: size.width * 0.02,
-                         ),
-                         child: Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children:const [
-                             Text(
-                               "guests",
-                               style: TextStyle(
-                                 fontFamily: 'Samarkan',
-                                 fontSize: 30,
-                                 fontWeight: FontWeight.w500,
-                               ),
-                             ),
-                           ],
-                         ),
-                       ),
-                     ),
-
-                   ],
-                 ),
-                 Row(
-                   mainAxisAlignment: MainAxisAlignment.end,
-                   children :[
-                     Container(
-                       height: size.height * 0.065,
-                       width: size.width*0.45,
-                       decoration: BoxDecoration(
-
-                         gradient: linearGrad1,
-                         borderRadius: BorderRadius.circular(
-                           10,
-                         ),
-                       ),
-                       child: Padding(
-                         padding: EdgeInsets.only(
-                           left: size.width * 0.02,
-                         ),
-                         child: Column(
-                           mainAxisAlignment: MainAxisAlignment.center,
-                           children:const [
-                             Text(
-                               "sponsors",
-                               style: TextStyle(
-                                 fontFamily: 'Samarkan',
-                                 fontSize: 30,
-                                 fontWeight: FontWeight.w500,
-                               ),
-                             ),
-                           ],
-                         ),
-                       ),
-                     ),
-                   ],
-                 ),
-               ],
-             ),
-
-
-
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          gradient: linearGrad1,
+                          borderRadius: BorderRadius.circular(
+                            10,
+                          ),
+                        ),
+                        height: size.height * 0.065,
+                        width: size.width * 0.45,
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            left: size.width * 0.02,
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Text(
+                                "guests",
+                                style: TextStyle(
+                                  fontFamily: 'Samarkan',
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Container(
+                        height: size.height * 0.065,
+                        width: size.width * 0.45,
+                        decoration: BoxDecoration(
+                          gradient: linearGrad1,
+                          borderRadius: BorderRadius.circular(
+                            10,
+                          ),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            left: size.width * 0.02,
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Text(
+                                "sponsors",
+                                style: TextStyle(
+                                  fontFamily: 'Samarkan',
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
 
               //Merchandise
               SizedBox(
@@ -519,10 +450,10 @@ class _AboutScreenState extends State<AboutScreen> {
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children :[
+                children: [
                   Container(
                     height: size.height * 0.065,
-                    width: size.width*0.92,
+                    width: size.width * 0.92,
                     decoration: BoxDecoration(
                       gradient: linearGrad1,
                       borderRadius: BorderRadius.circular(
@@ -535,7 +466,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children:const [
+                        children: const [
                           Text(
                             "Merchandise",
                             style: TextStyle(
@@ -548,10 +479,8 @@ class _AboutScreenState extends State<AboutScreen> {
                       ),
                     ),
                   ),
-
                 ],
               ),
-
 
               //teams
               SizedBox(
@@ -581,12 +510,11 @@ class _AboutScreenState extends State<AboutScreen> {
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children :[
+                children: [
                   Container(
                     height: size.height * 0.065,
-                    width: size.width*0.92,
+                    width: size.width * 0.92,
                     decoration: BoxDecoration(
-
                       gradient: linearGrad1,
                       borderRadius: BorderRadius.circular(
                         10,
@@ -598,7 +526,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children:const [
+                        children: const [
                           Text(
                             "Teams",
                             style: TextStyle(
@@ -611,10 +539,8 @@ class _AboutScreenState extends State<AboutScreen> {
                       ),
                     ),
                   ),
-
                 ],
               ),
-
 
               //Devs
               SizedBox(
@@ -644,10 +570,10 @@ class _AboutScreenState extends State<AboutScreen> {
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children :[
+                children: [
                   Container(
                     height: size.height * 0.065,
-                    width: size.width*0.92,
+                    width: size.width * 0.92,
                     decoration: BoxDecoration(
                       gradient: linearGrad1,
                       borderRadius: BorderRadius.circular(
@@ -660,7 +586,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children:const [
+                        children: const [
                           Text(
                             "Devs",
                             style: TextStyle(
@@ -673,15 +599,11 @@ class _AboutScreenState extends State<AboutScreen> {
                       ),
                     ),
                   ),
-
                 ],
               ),
               SizedBox(
                 height: size.height * 0.02,
               ),
-
-
-
 
               //visit us
               Column(
@@ -724,8 +646,8 @@ class _AboutScreenState extends State<AboutScreen> {
                 children: [
                   IconButton(
                     onPressed: () {
-                      method.launch(
-                          "https://www.facebook.com/udgam.nitsikkim/");
+                      method
+                          .launch("https://www.facebook.com/udgam.nitsikkim/");
                     },
                     icon: const FaIcon(
                       FontAwesomeIcons.facebook,
@@ -735,8 +657,8 @@ class _AboutScreenState extends State<AboutScreen> {
                   ),
                   IconButton(
                     onPressed: () {
-                      method.launch(
-                          "https://www.instagram.com/udgam_nitsikkim/");
+                      method
+                          .launch("https://www.instagram.com/udgam_nitsikkim/");
                     },
                     icon: const FaIcon(
                       FontAwesomeIcons.instagram,
@@ -746,8 +668,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   ),
                   IconButton(
                     onPressed: () {
-                      method
-                          .launch("https://www.youtube.com/@NITSikkimUdgam");
+                      method.launch("https://www.youtube.com/@NITSikkimUdgam");
                     },
                     icon: const FaIcon(
                       FontAwesomeIcons.youtube,
@@ -770,7 +691,6 @@ class _AboutScreenState extends State<AboutScreen> {
               SizedBox(
                 height: size.height * 0.04,
               ),
-
             ],
           ),
         ),
