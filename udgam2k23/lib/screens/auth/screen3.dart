@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/screens/auth/auth_screen.dart';
+import 'package:udgam2k23/widgets/custom_page_route.dart';
 
 class Screen3 extends StatefulWidget {
   const Screen3({super.key});
@@ -68,7 +69,7 @@ class _Screen3State extends State<Screen3> {
               child: Padding(
                 padding: EdgeInsets.only(
                   right: size.width * 0.08,
-                  top: size.width * 0.79,
+                  top: size.width * 0.82,
                 ),
                 child: Column(
                   children: [
@@ -86,8 +87,9 @@ class _Screen3State extends State<Screen3> {
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => const AuthScreen(),
+                            CustomPageRoute(
+                              child: const AuthScreen(),
+                              direction: AxisDirection.left,
                             ),
                           );
                         },
