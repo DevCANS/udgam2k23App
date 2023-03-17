@@ -121,6 +121,7 @@ class _AboutScreenState extends State<AboutScreen> {
                 height: size.height * 0.02,
               ),
 
+              //guest list
               Container(
                 decoration: BoxDecoration(
                   gradient: linearGrad1,
