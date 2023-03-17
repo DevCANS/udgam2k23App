@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:udgam2k23/screens/auth/screen3.dart';
+import 'package:udgam2k23/screens/auth/auth_screen.dart';
 
-class Screen2 extends StatefulWidget {
-  const Screen2({super.key});
+class Screen3 extends StatefulWidget {
+  const Screen3({super.key});
 
   @override
-  State<Screen2> createState() => _Screen2State();
+  State<Screen3> createState() => _Screen3State();
 }
 
-class _Screen2State extends State<Screen2> {
+class _Screen3State extends State<Screen3> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -17,12 +17,12 @@ class _Screen2State extends State<Screen2> {
       body: Stack(
         children: [
           Container(
-            height: size.height * 0.30,
+            height: size.height * 0.40,
             width: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 alignment: Alignment.topCenter,
-                image: AssetImage('assets/auth/t2.png'),
+                image: AssetImage('assets/auth/t3.png'),
                 fit: BoxFit.fill,
               ),
             ),
@@ -44,7 +44,7 @@ class _Screen2State extends State<Screen2> {
                     "udgam 2k23",
                     style: TextStyle(
                       fontFamily: 'Samarkan',
-                      fontSize: 35,
+                      fontSize: 36,
                     ),
                   ),
                 ],
@@ -53,55 +53,22 @@ class _Screen2State extends State<Screen2> {
           ),
           Padding(
             padding: EdgeInsets.only(
-              top: size.height * 0.25,
-            ),
-            child: Center(
-              child: Column(
-                children: [
-                  Image.asset(
-                    "assets/auth/i4.png",
-                  ),
-                  SizedBox(
-                    height: size.height * 0.015,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(
-                      right: size.width * 0.25,
-                    ),
-                    child: Image.asset(
-                      "assets/auth/i5.png",
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(
-                      left: size.width * 0.25,
-                    ),
-                    child: Image.asset(
-                      "assets/auth/i6.png",
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(
-              top: size.height * 0.69,
+              top: size.height * 0.45,
             ),
             child: Container(
-              height: size.height * 0.35,
+              height: size.height * 0.60,
               width: double.infinity,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   alignment: Alignment.bottomCenter,
-                  image: AssetImage('assets/auth/b2.png'),
+                  image: AssetImage('assets/auth/b3.png'),
                   fit: BoxFit.fill,
                 ),
               ),
               child: Padding(
                 padding: EdgeInsets.only(
                   right: size.width * 0.08,
-                  top: size.width * 0.33,
+                  top: size.width * 0.79,
                 ),
                 child: Column(
                   children: [
@@ -114,13 +81,13 @@ class _Screen2State extends State<Screen2> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(
-                        left: size.width * 0.70,
+                        left: size.width * 0.66,
                       ),
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => const Screen3(),
+                              builder: (context) => const AuthScreen(),
                             ),
                           );
                         },
@@ -135,7 +102,7 @@ class _Screen2State extends State<Screen2> {
                           ),
                         ),
                         child: Text(
-                          "NEXT  >",
+                          "Let's Go  >",
                           style: GoogleFonts.poppins(
                             fontSize: 14,
                             color: Colors.black,
@@ -146,6 +113,38 @@ class _Screen2State extends State<Screen2> {
                   ],
                 ),
               ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              left: size.width * 0.15,
+              top: size.height * 0.25,
+            ),
+            child: Column(
+              children: [
+                Image.asset(
+                  "assets/auth/i4.png",
+                ),
+                SizedBox(
+                  height: size.height * 0.015,
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    right: size.width * 0.25,
+                  ),
+                  child: Image.asset(
+                    "assets/auth/i5.png",
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    left: size.width * 0.25,
+                  ),
+                  child: Image.asset(
+                    "assets/auth/i6.png",
+                  ),
+                ),
+              ],
             ),
           ),
         ],

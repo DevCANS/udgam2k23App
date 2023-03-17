@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:udgam2k23/screens/auth/screen3.dart';
 
-class Screen2 extends StatefulWidget {
-  const Screen2({super.key});
+class AuthScreen extends StatefulWidget {
+  const AuthScreen({super.key});
 
   @override
-  State<Screen2> createState() => _Screen2State();
+  State<AuthScreen> createState() => _AuthScreenState();
 }
 
-class _Screen2State extends State<Screen2> {
+class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -17,12 +17,12 @@ class _Screen2State extends State<Screen2> {
       body: Stack(
         children: [
           Container(
-            height: size.height * 0.30,
+            height: size.height * 0.55,
             width: double.infinity,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 alignment: Alignment.topCenter,
-                image: AssetImage('assets/auth/t2.png'),
+                image: AssetImage('assets/auth/t4.png'),
                 fit: BoxFit.fill,
               ),
             ),
@@ -44,7 +44,7 @@ class _Screen2State extends State<Screen2> {
                     "udgam 2k23",
                     style: TextStyle(
                       fontFamily: 'Samarkan',
-                      fontSize: 35,
+                      fontSize: 36,
                     ),
                   ),
                 ],
@@ -53,77 +53,37 @@ class _Screen2State extends State<Screen2> {
           ),
           Padding(
             padding: EdgeInsets.only(
-              top: size.height * 0.25,
-            ),
-            child: Center(
-              child: Column(
-                children: [
-                  Image.asset(
-                    "assets/auth/i4.png",
-                  ),
-                  SizedBox(
-                    height: size.height * 0.015,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(
-                      right: size.width * 0.25,
-                    ),
-                    child: Image.asset(
-                      "assets/auth/i5.png",
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(
-                      left: size.width * 0.25,
-                    ),
-                    child: Image.asset(
-                      "assets/auth/i6.png",
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(
-              top: size.height * 0.69,
+              top: size.height * 0.19,
             ),
             child: Container(
-              height: size.height * 0.35,
+              height: size.height * 0.81,
               width: double.infinity,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   alignment: Alignment.bottomCenter,
-                  image: AssetImage('assets/auth/b2.png'),
+                  image: AssetImage('assets/auth/b4.png'),
                   fit: BoxFit.fill,
                 ),
               ),
               child: Padding(
                 padding: EdgeInsets.only(
-                  right: size.width * 0.08,
-                  top: size.width * 0.33,
+                  left: size.width * 0.04,
+                  top: size.width * 0.60,
                 ),
                 child: Column(
                   children: [
-                    Text(
-                      "Witness the incredible cultural performances\nof north east.",
-                      style: GoogleFonts.poppins(
-                        fontSize: 14,
-                        color: Colors.black,
-                      ),
+                    Image.asset(
+                      "assets/auth/text.png",
+                    ),
+                    SizedBox(
+                      height: size.height * 0.01,
                     ),
                     Padding(
                       padding: EdgeInsets.only(
-                        left: size.width * 0.70,
+                        left: size.width * 0.15,
+                        right: size.width * 0.07,
                       ),
                       child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => const Screen3(),
-                            ),
-                          );
-                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(
                             0xFFFEFAE0,
@@ -134,12 +94,22 @@ class _Screen2State extends State<Screen2> {
                             ),
                           ),
                         ),
-                        child: Text(
-                          "NEXT  >",
-                          style: GoogleFonts.poppins(
-                            fontSize: 14,
-                            color: Colors.black,
-                          ),
+                        onPressed: () {},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            const FaIcon(
+                              FontAwesomeIcons.google,
+                              color: Colors.black,
+                            ),
+                            Text(
+                              "Continue With Google",
+                              style: GoogleFonts.lexendDeca(
+                                fontSize: 14,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),

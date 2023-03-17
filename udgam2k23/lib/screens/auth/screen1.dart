@@ -30,7 +30,7 @@ class _Screen1State extends State<Screen1> {
             child: Padding(
               padding: EdgeInsets.only(
                 left: size.width * 0.08,
-                top: size.height * 0.04,
+                top: size.height * 0.06,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,7 +45,7 @@ class _Screen1State extends State<Screen1> {
                     "udgam 2k23",
                     style: TextStyle(
                       fontFamily: 'Samarkan',
-                      fontSize: 33,
+                      fontSize: 35,
                     ),
                   ),
                 ],
@@ -110,7 +110,7 @@ class _Screen1State extends State<Screen1> {
                       "Witness the incredible cultural performances\nof north east.",
                       style: GoogleFonts.poppins(
                         fontSize: 14,
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                     Padding(
@@ -126,7 +126,9 @@ class _Screen1State extends State<Screen1> {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
+                          backgroundColor: const Color(
+                            0xFFFEFAE0,
+                          ),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(
                               18,

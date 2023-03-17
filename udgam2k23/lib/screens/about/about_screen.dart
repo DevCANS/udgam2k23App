@@ -352,73 +352,66 @@ class _AboutScreenState extends State<AboutScreen> {
               ),
 
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          gradient: linearGrad1,
-                          borderRadius: BorderRadius.circular(
-                            10,
-                          ),
+                  InkWell(
+                    onTap: () {},
+                    child: Container(
+                      decoration: BoxDecoration(
+                        gradient: linearGrad1,
+                        borderRadius: BorderRadius.circular(
+                          10,
                         ),
-                        height: size.height * 0.065,
-                        width: size.width * 0.45,
-                        child: Padding(
-                          padding: EdgeInsets.only(
-                            left: size.width * 0.02,
-                          ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
-                              Text(
-                                "guests",
-                                style: TextStyle(
-                                  fontFamily: 'Samarkan',
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ],
+                      ),
+                      height: size.height * 0.085,
+                      width: size.width * 0.45,
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: size.width * 0.02,
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "guests",
+                            style: TextStyle(
+                              fontFamily: 'Samarkan',
+                              fontSize: 25,
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
                         ),
                       ),
-                    ],
+                    ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Container(
-                        height: size.height * 0.065,
-                        width: size.width * 0.45,
-                        decoration: BoxDecoration(
-                          gradient: linearGrad1,
-                          borderRadius: BorderRadius.circular(
-                            10,
-                          ),
+                  SizedBox(
+                    width: size.width * 0.02,
+                  ),
+                  InkWell(
+                    onTap: () {},
+                    child: Container(
+                      height: size.height * 0.085,
+                      width: size.width * 0.45,
+                      decoration: BoxDecoration(
+                        gradient: linearGrad1,
+                        borderRadius: BorderRadius.circular(
+                          10,
                         ),
-                        child: Padding(
-                          padding: EdgeInsets.only(
-                            left: size.width * 0.02,
-                          ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
-                              Text(
-                                "sponsors",
-                                style: TextStyle(
-                                  fontFamily: 'Samarkan',
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ],
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: size.width * 0.02,
+                        ),
+                        child: const Center(
+                          child: Text(
+                            "sponsors",
+                            style: TextStyle(
+                              fontFamily: 'Samarkan',
+                              fontSize: 25,
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
                         ),
                       ),
-                    ],
+                    ),
                   ),
                 ],
               ),
@@ -449,38 +442,36 @@ class _AboutScreenState extends State<AboutScreen> {
                 height: size.height * 0.01,
               ),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    height: size.height * 0.065,
-                    width: size.width * 0.92,
-                    decoration: BoxDecoration(
-                      gradient: linearGrad1,
-                      borderRadius: BorderRadius.circular(
-                        10,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                        left: size.width * 0.02,
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Text(
-                            "Merchandise",
-                            style: TextStyle(
-                              fontFamily: 'Samarkan',
-                              fontSize: 30,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  height: size.height * 0.085,
+                  width: size.width * 0.92,
+                  decoration: BoxDecoration(
+                    gradient: linearGrad1,
+                    borderRadius: BorderRadius.circular(
+                      10,
                     ),
                   ),
-                ],
+                  child: Padding(
+                    padding: EdgeInsets.only(
+                      left: size.width * 0.02,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text(
+                          "Merchandise",
+                          style: TextStyle(
+                            fontFamily: 'Samarkan',
+                            fontSize: 25,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
 
               //teams
@@ -509,38 +500,36 @@ class _AboutScreenState extends State<AboutScreen> {
                 height: size.height * 0.01,
               ),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    height: size.height * 0.065,
-                    width: size.width * 0.92,
-                    decoration: BoxDecoration(
-                      gradient: linearGrad1,
-                      borderRadius: BorderRadius.circular(
-                        10,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                        left: size.width * 0.02,
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Text(
-                            "Teams",
-                            style: TextStyle(
-                              fontFamily: 'Samarkan',
-                              fontSize: 30,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  height: size.height * 0.085,
+                  width: size.width * 0.92,
+                  decoration: BoxDecoration(
+                    gradient: linearGrad1,
+                    borderRadius: BorderRadius.circular(
+                      10,
                     ),
                   ),
-                ],
+                  child: Padding(
+                    padding: EdgeInsets.only(
+                      left: size.width * 0.02,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text(
+                          "Teams",
+                          style: TextStyle(
+                            fontFamily: 'Samarkan',
+                            fontSize: 25,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
 
               //Devs
@@ -569,38 +558,36 @@ class _AboutScreenState extends State<AboutScreen> {
                 height: size.height * 0.01,
               ),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    height: size.height * 0.065,
-                    width: size.width * 0.92,
-                    decoration: BoxDecoration(
-                      gradient: linearGrad1,
-                      borderRadius: BorderRadius.circular(
-                        10,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                        left: size.width * 0.02,
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Text(
-                            "Devs",
-                            style: TextStyle(
-                              fontFamily: 'Samarkan',
-                              fontSize: 30,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  height: size.height * 0.085,
+                  width: size.width * 0.92,
+                  decoration: BoxDecoration(
+                    gradient: linearGrad1,
+                    borderRadius: BorderRadius.circular(
+                      10,
                     ),
                   ),
-                ],
+                  child: Padding(
+                    padding: EdgeInsets.only(
+                      left: size.width * 0.02,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text(
+                          "Devs",
+                          style: TextStyle(
+                            fontFamily: 'Samarkan',
+                            fontSize: 25,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
               SizedBox(
                 height: size.height * 0.02,
