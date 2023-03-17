@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:udgam2k23/widgets/custom_page_route.dart';
 import 'package:udgam2k23/screens/auth/screen2.dart';
 
 class Screen1 extends StatefulWidget {
@@ -120,9 +121,12 @@ class _Screen1State extends State<Screen1> {
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => const Screen2(),
-                            ),
+                            CustomPageRoute(
+                                child: Screen2(),
+                                direction: AxisDirection.left),
+                            // MaterialPageRoute(
+                            //   builder: (context) => const Screen2(),
+                            // ),
                           );
                         },
                         style: ElevatedButton.styleFrom(
