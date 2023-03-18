@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:udgam2k23/general.dart';
-import 'package:udgam2k23/screens/about/about_screen.dart';
+import 'package:udgam2k23/screens/home/home_screen.dart';
 import 'package:udgam2k23/screens/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
     ),
   );
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -29,6 +30,9 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
+      routes: {
+        '/home': (context) => const HomeScreen(),
+      },
       home: const SplashScreen(),
     );
   }

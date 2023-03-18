@@ -444,8 +444,7 @@ class _AboutScreenState extends State<AboutScreen> {
               ),
 
               InkWell(
-                onTap: () {
-                },
+                onTap: () {},
                 child: Container(
                   height: size.height * 0.085,
                   width: size.width * 0.92,

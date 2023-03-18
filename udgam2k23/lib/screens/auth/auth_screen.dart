@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:udgam2k23/general.dart';
+import 'package:udgam2k23/methods/auth_methods.dart';
+import 'package:udgam2k23/widgets/custom_page_route.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
@@ -10,6 +13,8 @@ class AuthScreen extends StatefulWidget {
 }
 
 class _AuthScreenState extends State<AuthScreen> {
+  final AuthMethods _authMethods = AuthMethods();
+
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -94,7 +99,24 @@ class _AuthScreenState extends State<AuthScreen> {
                             ),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () async {
+                          bool res =
+                              await _authMethods.signInWithGoogle(context);
+                          if (res) {
+                            await Future.delayed(
+                              const Duration(
+                                seconds: 2,
+                              ),
+                            );
+                            // ignore: use_build_context_synchronously
+                            Navigator.of(context).push(
+                              CustomPageRoute(
+                                child: const General(),
+                                direction: AxisDirection.left,
+                              ),
+                            );
+                          }
+                        },
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
