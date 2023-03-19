@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:udgam2k23/screens/about/about_screen.dart';
 import 'package:udgam2k23/widgets/custom_page_route.dart';
 import 'package:udgam2k23/screens/auth/screen2.dart';
 
@@ -123,7 +122,7 @@ class _Screen1State extends State<Screen1> {
                         onPressed: () {
                           Navigator.of(context).push(
                             CustomPageRoute(
-                              child: const AboutScreen(),
+                              child: const Screen2(),
                               direction: AxisDirection.left,
                             ),
                             // MaterialPageRoute(
