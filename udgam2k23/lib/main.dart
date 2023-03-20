@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:udgam2k23/general.dart';
+import 'package:udgam2k23/screens/auth/screen1.dart';
 import 'package:udgam2k23/screens/home/home_screen.dart';
 import 'package:udgam2k23/screens/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
+
+import 'methods/auth_methods.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,15 +29,26 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-
         primarySwatch: Colors.blue,
       ),
       routes: {
         '/home': (context) => const HomeScreen(),
       },
-      home: const SplashScreen(),
+      // home: const SplashScreen(),
+      home: StreamBuilder(
+        stream: AuthMethods().authChanges,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+          if (snapshot.hasData) {
+            return const General();
+          }
+          return const Screen1();
+        },
+      ),
     );
   }
 }

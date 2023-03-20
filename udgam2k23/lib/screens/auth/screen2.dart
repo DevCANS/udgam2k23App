@@ -102,15 +102,16 @@ class _Screen2State extends State<Screen2> {
               child: Padding(
                 padding: EdgeInsets.only(
                   right: size.width * 0.08,
-                  top: size.width * 0.33,
+                  top: size.width * 0.36,
                 ),
                 child: Column(
                   children: [
                     Text(
-                      "Witness the incredible cultural performances\nof north east.",
+                      "\u{2022} Witness the incredible cultural performances\n   of north east.",
                       style: GoogleFonts.poppins(
                         fontSize: 14,
-                        color: Colors.black,
+                        color: Colors.white,
+                        // fontWeight: FontWeight.w500,
                       ),
                     ),
                     Padding(
@@ -137,10 +138,10 @@ class _Screen2State extends State<Screen2> {
                           ),
                         ),
                         child: Text(
-                          "NEXT  >",
+                          "NEXT   >",
                           style: GoogleFonts.poppins(
                             fontSize: 14,
-                            color: Colors.black,
+                            color: Colors.black38,
                           ),
                         ),
                       ),

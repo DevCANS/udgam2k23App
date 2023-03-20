@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/widgets/custom_page_route.dart';
 import 'package:udgam2k23/screens/auth/screen2.dart';
@@ -108,10 +107,10 @@ class _Screen1State extends State<Screen1> {
                 child: Column(
                   children: [
                     Text(
-                      "Witness the incredible cultural performances\nof north east.",
+                      "\u{2022} Witness the incredible cultural performances\n   of north east.",
                       style: GoogleFonts.poppins(
                         fontSize: 14,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                     Padding(
@@ -141,10 +140,10 @@ class _Screen1State extends State<Screen1> {
                           ),
                         ),
                         child: Text(
-                          "NEXT  >",
+                          "NEXT   >",
                           style: GoogleFonts.poppins(
                             fontSize: 14,
-                            color: Colors.black,
+                            color: Colors.black38,
                           ),
                         ),
                       ),

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "648104312368",
+    "firebase_url": "https://udgam-2k23-default-rtdb.firebaseio.com",
     "project_id": "udgam-2k23",
     "storage_bucket": "udgam-2k23.appspot.com"
   },
@@ -14,15 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "648104312368-96hrphc24guc1lg3t7kapf3g7epbuaht.apps.googleusercontent.com",
+          "client_id": "648104312368-0c4cqritbplfjr1avdjg7aqk5n59ueg9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.udgam2k23",
-            "certificate_hash": "0c03865365e5c13d62b63aab29a68b6499bdf407"
+            "certificate_hash": "a6547d8429e6c6bb84d8153a8005dc4f70444a4f"
           }
         },
         {
-          "client_id": "648104312368-2aobeqe809ov5bj8q8h4h1fcndr3gcdj.apps.googleusercontent.com",
+          "client_id": "648104312368-aujg1u4f937t5siarai8m2e8ffnuu4p2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

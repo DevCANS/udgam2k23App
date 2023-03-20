@@ -81,7 +81,7 @@ class _AuthScreenState extends State<AuthScreen> {
                       "assets/auth/text.png",
                     ),
                     SizedBox(
-                      height: size.height * 0.01,
+                      height: size.height * 0.03,
                     ),
                     Padding(
                       padding: EdgeInsets.only(
@@ -122,13 +122,13 @@ class _AuthScreenState extends State<AuthScreen> {
                           children: [
                             const FaIcon(
                               FontAwesomeIcons.google,
-                              color: Colors.black,
+                              color: Colors.black54,
                             ),
                             Text(
-                              "Continue With Google",
+                              "continue  with  google",
                               style: GoogleFonts.lexendDeca(
                                 fontSize: 14,
-                                color: Colors.black,
+                                color: Colors.black45,
                               ),
                             ),
                           ],

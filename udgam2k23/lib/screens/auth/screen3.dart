@@ -69,20 +69,20 @@ class _Screen3State extends State<Screen3> {
               child: Padding(
                 padding: EdgeInsets.only(
                   right: size.width * 0.08,
-                  top: size.width * 0.82,
+                  top: size.width * 0.84,
                 ),
                 child: Column(
                   children: [
                     Text(
-                      "Witness the incredible cultural performances\nof north east.",
+                      "\u{2022} Witness the incredible cultural performances\n   of north east.",
                       style: GoogleFonts.poppins(
                         fontSize: 14,
-                        color: Colors.black,
+                        color: Colors.white,
                       ),
                     ),
                     Padding(
                       padding: EdgeInsets.only(
-                        left: size.width * 0.66,
+                        left: size.width * 0.64,
                       ),
                       child: ElevatedButton(
                         onPressed: () {
@@ -104,10 +104,10 @@ class _Screen3State extends State<Screen3> {
                           ),
                         ),
                         child: Text(
-                          "Let's Go  >",
+                          "Let's Go   >",
                           style: GoogleFonts.poppins(
                             fontSize: 14,
-                            color: Colors.black,
+                            color: Colors.black38,
                           ),
                         ),
                       ),

@@ -18,8 +18,9 @@ class FeaturedCard1 extends StatelessWidget {
     final Size size = MediaQuery.of(context).size;
     return Card(
       child: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: linearGrad1,
+          borderRadius: BorderRadius.circular(5),
         ),
         child: Padding(
           padding: EdgeInsets.all(
