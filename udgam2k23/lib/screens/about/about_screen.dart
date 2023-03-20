@@ -145,26 +145,28 @@ class _AboutScreenState extends State<AboutScreen> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                  height: size.height * 0.07,
-                                  width: size.height * 0.07,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(100),
-                                  ),
-                                  child: const CircleAvatar(
-                                    backgroundImage: AssetImage(
-                                        "assets/featured_events/fev1.png"),
-                                  )),
+                                height: size.height * 0.07,
+                                width: size.height * 0.07,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(100),
+                                ),
+                                child: const CircleAvatar(
+                                  backgroundImage:
+                                      AssetImage("assets/teams/CoreTeam/P.jpg"),
+                                ),
+                              ),
                               Text(
-                                "Namaewa name",
+                                "Pankaj Joshi",
                                 style: GoogleFonts.poppins(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
-                                "Kaizoku",
+                                "President",
                                 style: GoogleFonts.poppins(
                                   fontSize: 8,
+                                  fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -181,19 +183,20 @@ class _AboutScreenState extends State<AboutScreen> {
                                   ),
                                   child: const CircleAvatar(
                                     backgroundImage: AssetImage(
-                                        "assets/featured_events/fev1.png"),
+                                        "assets/teams/CoreTeam/VP.jpg"),
                                   )),
                               Text(
-                                "Namaewa name",
+                                "Choden Tamang",
                                 style: GoogleFonts.poppins(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
-                                "Kaizoku",
+                                "Vice President",
                                 style: GoogleFonts.poppins(
                                   fontSize: 8,
+                                  fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -210,19 +213,20 @@ class _AboutScreenState extends State<AboutScreen> {
                                   ),
                                   child: const CircleAvatar(
                                     backgroundImage: AssetImage(
-                                        "assets/featured_events/fev1.png"),
+                                        "assets/teams/CoreTeam/TSR.jpg"),
                                   )),
                               Text(
-                                "Namaewa name",
+                                "Aman Prasad",
                                 style: GoogleFonts.poppins(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
-                                "Kaizoku",
+                                "Treasurer",
                                 style: GoogleFonts.poppins(
                                   fontSize: 8,
+                                  fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -247,19 +251,20 @@ class _AboutScreenState extends State<AboutScreen> {
                                   ),
                                   child: const CircleAvatar(
                                     backgroundImage: AssetImage(
-                                        "assets/featured_events/fev1.png"),
+                                        "assets/teams/CoreTeam/SS.jpg"),
                                   )),
                               Text(
-                                "Namaewa name",
+                                "Aman Saurav",
                                 style: GoogleFonts.poppins(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
-                                "Kaizoku",
+                                "Secretary",
                                 style: GoogleFonts.poppins(
                                   fontSize: 8,
+                                  fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -276,19 +281,20 @@ class _AboutScreenState extends State<AboutScreen> {
                                   ),
                                   child: const CircleAvatar(
                                     backgroundImage: AssetImage(
-                                        "assets/featured_events/fev1.png"),
+                                        "assets/teams/CoreTeam/GS.jpg"),
                                   )),
                               Text(
-                                "Namaewa name",
+                                "Visakha Kumari",
                                 style: GoogleFonts.poppins(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
-                                "Kaizoku",
+                                "General Secretary",
                                 style: GoogleFonts.poppins(
                                   fontSize: 8,
+                                  fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -305,19 +311,20 @@ class _AboutScreenState extends State<AboutScreen> {
                                   ),
                                   child: const CircleAvatar(
                                     backgroundImage: AssetImage(
-                                        "assets/featured_events/fev1.png"),
+                                        "assets/teams/CoreTeam/JS.jpg"),
                                   )),
                               Text(
-                                "Namaewa name",
+                                "Sidarth Prasad",
                                 style: GoogleFonts.poppins(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
-                                "Kaizoku",
+                                "Joint Secretary",
                                 style: GoogleFonts.poppins(
                                   fontSize: 8,
+                                  fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),

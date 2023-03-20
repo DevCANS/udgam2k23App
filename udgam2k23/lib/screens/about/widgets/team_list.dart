@@ -4,10 +4,12 @@ import 'package:udgam2k23/constants.dart';
 
 class TeamList extends StatelessWidget {
   final String teamname;
+  final VoidCallback onPressed;
 
   const TeamList({
     super.key,
     required this.teamname,
+    required this.onPressed,
   });
 
   @override
@@ -15,7 +17,7 @@ class TeamList extends StatelessWidget {
     final Size size = MediaQuery.of(context).size;
     return Card(
       child: InkWell(
-        onTap: () {},
+        onTap: onPressed,
         child: Container(
           height: size.height * 0.065,
           width: size.width * 0.92,

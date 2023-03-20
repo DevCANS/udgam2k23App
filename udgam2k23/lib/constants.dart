@@ -20,3 +20,9 @@ const linearGrad2 = LinearGradient(
 );
 
 const splashColor = Color.fromARGB(255, 105, 104, 104);
+
+const radialGrad = RadialGradient(
+  colors: [Color(0xff2095f3), Color(0xff004d94)],
+  center: Alignment.center,
+  radius: 1.2,
+);
