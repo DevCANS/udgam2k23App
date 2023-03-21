@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/methods.dart';
 import 'package:udgam2k23/screens/about/widgets/team_list.dart';
+import 'package:udgam2k23/widgets/custom_page_route.dart';
+//teams
+import 'package:udgam2k23/screens/teams/core_team.dart';
 import 'package:udgam2k23/screens/teams/advisory.dart';
 import 'package:udgam2k23/screens/teams/app.dart';
 import 'package:udgam2k23/screens/teams/content.dart';
@@ -20,9 +23,6 @@ import 'package:udgam2k23/screens/teams/publicity.dart';
 import 'package:udgam2k23/screens/teams/sponsorship.dart';
 import 'package:udgam2k23/screens/teams/technical.dart';
 import 'package:udgam2k23/screens/teams/web.dart';
-import 'package:udgam2k23/widgets/custom_page_route.dart';
-//teams
-import 'package:udgam2k23/screens/teams/core_team.dart';
 
 class TeamScreen extends StatefulWidget {
   const TeamScreen({super.key});

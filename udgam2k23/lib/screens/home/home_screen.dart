@@ -19,9 +19,12 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   Methods method = Methods();
   List imageList = [
-    {"id": "1", "image_path": 'assets/carousel/img1.jpeg'},
-    {"id": "2", "image_path": 'assets/carousel/img2.jpg'},
-    {"id": "3", "image_path": 'assets/carousel/img3.jpg'},
+    {"id": "1", "image_path": 'assets/carousel/img1.JPG'},
+    {"id": "2", "image_path": 'assets/carousel/img2.JPG'},
+    {"id": "3", "image_path": 'assets/carousel/img3.JPG'},
+    {"id": "3", "image_path": 'assets/carousel/img4.JPG'},
+    {"id": "3", "image_path": 'assets/carousel/img5.JPG'},
+    {"id": "3", "image_path": 'assets/carousel/img6.JPG'},
   ];
   final CarouselController carouselController = CarouselController();
   int currentIndex = 0;
@@ -60,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const Text(
-                          "udgam 2k23",
+                          " udgam 2k23",
                           style: TextStyle(
                             fontFamily: 'Samarkan',
                             fontSize: 30,

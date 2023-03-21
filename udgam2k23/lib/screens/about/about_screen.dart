@@ -35,6 +35,7 @@ class _AboutScreenState extends State<AboutScreen> {
                 ),
 
                 Container(
+                  height: size.height * 0.065,
                   decoration: BoxDecoration(
                     color: backgroundColor,
                     borderRadius: BorderRadius.circular(
@@ -49,7 +50,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
                         Text(
-                          "about",
+                          " about",
                           style: TextStyle(
                             fontFamily: 'Samarkan',
                             fontSize: 30,

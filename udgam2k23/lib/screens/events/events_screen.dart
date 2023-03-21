@@ -43,7 +43,7 @@ class _EventsScreenState extends State<EventsScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
                       Text(
-                        "events",
+                        " events",
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

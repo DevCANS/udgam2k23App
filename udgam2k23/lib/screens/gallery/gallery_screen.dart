@@ -47,7 +47,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: const [
                         Text(
-                          "gallery",
+                          " gallery",
                           style: TextStyle(
                             fontFamily: 'Samarkan',
                             fontSize: 30,
