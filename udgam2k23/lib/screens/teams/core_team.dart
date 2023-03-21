@@ -66,9 +66,8 @@ class _CoreTeamState extends State<CoreTeam> {
                 name: "Pankaj Joshi",
                 designation: "President",
                 onPressed1: () => method.launch("tel:+918755396485"),
-                onPressed2: () => method.launch(
-                  "mailto:b190138@nitsikkim.ac.in",
-                ),
+                onPressed2: () =>
+                    method.launch("mailto:b190138@nitsikkim.ac.in"),
               ),
               SizedBox(
                 height: size.height * 0.002,
@@ -124,6 +123,111 @@ class _CoreTeamState extends State<CoreTeam> {
               ),
               SizedBox(
                 height: size.height * 0.01,
+              ),
+
+              TeamCard(
+                imagePath: "assets/teams/CoreTeam/U.jpg",
+                name: "Siddharth Utsav",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+918637824532"),
+                onPressed2: () =>
+                        method.launch("mailto:b200076@nitsikkim.ac.in"),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+
+              TeamCard(
+                imagePath: "assets/teams/CoreTeam/Z.jpg",
+                name: "Zameer Ahmad Ansari",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+919588633193"),
+                onPressed2: () =>
+                    method.launch("mailto:b200032@nitsikkim.ac.in"),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+
+              TeamCard(
+                imagePath: "assets/teams/CoreTeam/Sampath.jpg",
+                name: "Palisetti Sai Sampath",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+916303824117"),
+                onPressed2: () =>
+                    method.launch("mailto:b210057@nitsikkim.ac.in"),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+
+              TeamCard(
+                imagePath: "assets/teams/CoreTeam/Suruchi.jpg",
+                name: "Suruchi Sharma",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+919883052966"),
+                onPressed2: () =>
+                    method.launch("mailto:b200034@nitsikkim.ac.in"),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+
+              TeamCard(
+                imagePath: "assets/teams/CoreTeam/M.jpg",
+                name: "Mohit Joshi",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+916296995093"),
+                onPressed2: () =>
+                    method.launch("mailto:b210055@nitsikkim.ac.in"),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+
+              TeamCard(
+                imagePath: "assets/teams/CoreTeam/Sakshi.jpg",
+                name: "Sakshi Sharma",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+916389235119"),
+                onPressed2: () =>
+                    method.launch("mailto:b210142@nitsikkim.ac.in"),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+
+              TeamCard(
+                imagePath: "assets/teams/CoreTeam/Swastik.jpg",
+                name: "Swastik Chakraborty ",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+917980375230"),
+                onPressed2: () =>
+                    method.launch("mailto:b210144@nitsikkim.ac.in "),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+
+              TeamCard(
+                imagePath: "assets/teams/CoreTeam/Akhil.jpg",
+                name: "Sevak Akhil Shantilal ",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+919082401537"),
+                onPressed2: () =>
+                    method.launch("mailto:b200134@nitsikkim.ac.in "),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+
+              TeamCard(
+                imagePath: "assets/teams/CoreTeam/N.jpg",
+                name: "Navjeevan Kumar",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+916202797550"),
+                onPressed2: () =>
+                    method.launch("mailto:b210082@nitsikkim.ac.in"),
               ),
             ],
           ),
