@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 
 class EventsScreen extends StatefulWidget {
@@ -51,6 +52,27 @@ class _EventsScreenState extends State<EventsScreen> {
                       ),
                     ],
                   ),
+                ),
+              ),
+              SizedBox(
+                height: size.height * 0.05,
+              ),
+              Center(
+                child: Text(
+                  'will be updated soon (^^)',
+                  style: GoogleFonts.lexendDeca(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: size.height * 0.05,
+              ),
+              Center(
+                child: Image.asset(
+                  "assets/images/coming_soon.jpg",
+                  fit: BoxFit.scaleDown,
                 ),
               ),
             ],
