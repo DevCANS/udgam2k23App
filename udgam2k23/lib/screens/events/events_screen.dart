@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import "package:http/http.dart" as http;
@@ -73,7 +72,7 @@ class _EventsScreenState extends State<EventsScreen> {
                     builder: (context, snapshot) {
                       if (snapshot.hasData) {
                         final repos = snapshot.data!;
-                        return EventCard(repos[0]['day1'], context,size);
+                        return EventCard(repos[0]['day1'], context, size);
                       }
                       return const CircularProgressIndicator();
                     }),
@@ -105,10 +104,11 @@ class _EventsScreenState extends State<EventsScreen> {
 
   Widget EventCard(List<dynamic> repos, BuildContext context, Size size) =>
       ListView.builder(
+        // padding: EdgeInsets.zero,
         itemCount: repos.length,
         itemBuilder: (context, index) {
           final repo = repos[index];
-          return  Padding(
+          return Padding(
             padding: EdgeInsets.only(
               left: size.width * 0.04,
               right: size.width * 0.04,
@@ -116,7 +116,7 @@ class _EventsScreenState extends State<EventsScreen> {
             child: Column(
               children: [
                 const SizedBox(
-                  height: 50,
+                  height: 10, // ye hai size
                 ),
                 Card(
                   child: ClipRRect(
@@ -144,8 +144,8 @@ class _EventsScreenState extends State<EventsScreen> {
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black54
-                                // fontStyle: FontStyle.
-                              ),
+                                  // fontStyle: FontStyle.
+                                  ),
                             ),
                             SizedBox(
                               height: size.height * 0.01,
@@ -175,12 +175,12 @@ class _EventsScreenState extends State<EventsScreen> {
                                     ),
                                   ),
                                 ),
-
                                 Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 20.0),
                                   child: Container(
-                                    height: size.width*0.23,
-                                    width: size.width*0.23,
+                                    height: size.width * 0.23,
+                                    width: size.width * 0.23,
                                     color: Colors.blue,
                                   ),
                                 )
