@@ -74,7 +74,14 @@ class _EventsScreenState extends State<EventsScreen> {
                         final repos = snapshot.data!;
                         return EventCard(repos[0]['day1'], context, size);
                       }
-                      return const CircularProgressIndicator();
+                      return const Center(
+                        child: CircularProgressIndicator(
+                          backgroundColor: Color(0xFFe3dfff),
+                          valueColor: AlwaysStoppedAnimation(Colors.black45),
+                          strokeWidth: 5,
+                          value: 0.5,
+                        ),
+                      );
                     }),
                 FutureBuilder<List<dynamic>>(
                     future: futureEvents,
@@ -83,7 +90,14 @@ class _EventsScreenState extends State<EventsScreen> {
                         final repos = snapshot.data!;
                         return EventCard(repos[1]['day2'], context, size);
                       }
-                      return const CircularProgressIndicator();
+                      return const Center(
+                        child: CircularProgressIndicator(
+                          backgroundColor: Color(0xFFe3dfff),
+                          valueColor: AlwaysStoppedAnimation(Colors.black45),
+                          strokeWidth: 5,
+                          value: 0.5,
+                        ),
+                      );
                     }),
                 FutureBuilder<List<dynamic>>(
                     future: futureEvents,
@@ -92,7 +106,14 @@ class _EventsScreenState extends State<EventsScreen> {
                         final repos = snapshot.data!;
                         return EventCard(repos[2]['day3'], context, size);
                       }
-                      return const CircularProgressIndicator();
+                      return const Center(
+                        child: CircularProgressIndicator(
+                          backgroundColor: Color(0xFFe3dfff),
+                          valueColor: AlwaysStoppedAnimation(Colors.black45),
+                          strokeWidth: 5,
+                          value: 0.5,
+                        ),
+                      );
                     }),
               ],
             ),
@@ -143,7 +164,7 @@ class _EventsScreenState extends State<EventsScreen> {
                               style: GoogleFonts.bungeeShade(
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.black54
+                                  color: Color.fromARGB(180, 0, 0, 0)
                                   // fontStyle: FontStyle.
                                   ),
                             ),
