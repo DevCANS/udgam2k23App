@@ -7,18 +7,6 @@ import 'dart:convert';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import "package:udgam2k23/constants.dart";
 
-const linGrad = LinearGradient(
-  colors: [Color(0xffaaf2ff), Color(0xffe990fc)],
-  begin: Alignment.topLeft,
-  end: Alignment.bottomRight,
-);
-
-const radialGrad = RadialGradient(
-  colors: [Color(0xff2095f3), Color(0xff004d94)],
-  center: Alignment.center,
-  radius: 1.2,
-);
-
 class EventsScreen extends StatefulWidget {
   const EventsScreen({Key? key}) : super(key: key);
 
@@ -126,7 +114,7 @@ class _EventsScreenState extends State<EventsScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const [
                           Text(
-                            " about",
+                            " events",
                             style: TextStyle(
                               fontFamily: 'Samarkan',
                               fontSize: 30,
