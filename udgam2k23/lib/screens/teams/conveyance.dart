@@ -48,10 +48,10 @@ class _CADTeamState extends State<CADTeam> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        "Conveyance and Discipline Team",
+                        " Conveyance & Discipline Team",
                         style: TextStyle(
                           fontFamily: 'Samarkan',
-                          fontSize: 30,
+                          fontSize: 26,
                           fontWeight: FontWeight.w500,
                           color: Colors.white,
                         ),
