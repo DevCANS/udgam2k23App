@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
@@ -52,133 +51,140 @@ class _EventsScreenState extends State<EventsScreen> {
     final Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-
       body: Container(
-        height: size.height*0.91,
-        child:Padding(padding:EdgeInsets.only(top: size.height*0.01),
-        child: Center(
-          child: DefaultTabController(
-            length: 3,
-            child: Scaffold(
-              appBar: AppBar(
-                toolbarHeight: size.height*0.035,
-
-                backgroundColor: backgroundColor,
-                shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.vertical(
-                    top: Radius.circular(30),
-                    bottom: Radius.circular(30),
-                  ),),
-                bottom: TabBar(
-                  tabs: [
-                    Tab(icon: CircleAvatar(
-                      radius: size.height*0.02,
-                      backgroundColor: Colors.white,
-                      child: Center(
-                        child:FaIcon(
-                          FontAwesomeIcons.one,
-                          color: Colors.black,
-                          size: size.height*0.025,
-                        ),
-
-                      ),
-                    ),),
-                    Tab(icon: CircleAvatar(
-                      radius: size.height*0.02,
-                      backgroundColor: Colors.white,
-                      child: Center(
-                        child:FaIcon(
-                          FontAwesomeIcons.two,
-                          color: Colors.black,
-                          size: size.height*0.025,                        ),
-
-                      ),
-                    ),),
-                    Tab(icon: CircleAvatar(
-                      radius: size.height*0.02,                      backgroundColor: Colors.white,
-                      child: Center(
-                        child:FaIcon(
-                            FontAwesomeIcons.three,
-                            color: Colors.black,
-                            size: size.height*0.025,                          ),
-
-                      ),
-                    ),),
-                  ],
-                ),
-                title:  Container(
-                  height: size.height * 0.065,
-                  decoration: BoxDecoration(
-
-                    borderRadius: BorderRadius.circular(
-                      10,
+        height: size.height * 0.91,
+        child: Padding(
+          padding: EdgeInsets.only(top: size.height * 0.01),
+          child: Center(
+            child: DefaultTabController(
+              length: 3,
+              child: Scaffold(
+                appBar: AppBar(
+                  toolbarHeight: size.height * 0.035,
+                  backgroundColor: backgroundColor,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.vertical(
+                      top: Radius.circular(30),
+                      bottom: Radius.circular(30),
                     ),
                   ),
-                  child: Padding(
-                    padding: EdgeInsets.only(
-                      left: size.width * 0.02,
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        Text(
-                          " about",
-                          style: TextStyle(
-                            fontFamily: 'Samarkan',
-                            fontSize: 30,
-                            color: Colors.black87,
-                            fontWeight: FontWeight.w500,
+                  bottom: TabBar(
+                    tabs: [
+                      Tab(
+                        icon: CircleAvatar(
+                          radius: size.height * 0.02,
+                          backgroundColor: Colors.white,
+                          child: Center(
+                            child: FaIcon(
+                              FontAwesomeIcons.one,
+                              color: Colors.black,
+                              size: size.height * 0.025,
+                            ),
                           ),
                         ),
-                      ],
+                      ),
+                      Tab(
+                        icon: CircleAvatar(
+                          radius: size.height * 0.02,
+                          backgroundColor: Colors.white,
+                          child: Center(
+                            child: FaIcon(
+                              FontAwesomeIcons.two,
+                              color: Colors.black,
+                              size: size.height * 0.025,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Tab(
+                        icon: CircleAvatar(
+                          radius: size.height * 0.02,
+                          backgroundColor: Colors.white,
+                          child: Center(
+                            child: FaIcon(
+                              FontAwesomeIcons.three,
+                              color: Colors.black,
+                              size: size.height * 0.025,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  title: Container(
+                    height: size.height * 0.065,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(
+                        10,
+                      ),
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                        left: size.width * 0.02,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: const [
+                          Text(
+                            " about",
+                            style: TextStyle(
+                              fontFamily: 'Samarkan',
+                              fontSize: 30,
+                              color: Colors.black87,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-              ),
-              body: TabBarView(
-                children: [
-                  FutureBuilder<List<dynamic>>(
-                      future: futureEvents,
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData) {
-                          final repos = snapshot.data!;
-                          return EventCard(repos[0]['day1'], context,size);
-                        }
-                        return const CircularProgressIndicator();
-                      }),
-                  FutureBuilder<List<dynamic>>(
-                      future: futureEvents,
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData) {
-                          final repos = snapshot.data!;
-                          return EventCard(repos[1]['day2'], context, size);
-                        }
-                        return const CircularProgressIndicator();
-                      }),
-                  FutureBuilder<List<dynamic>>(
-                      future: futureEvents,
-                      builder: (context, snapshot) {
-                        if (snapshot.hasData) {
-                          final repos = snapshot.data!;
-                          return EventCard(repos[2]['day3'], context, size);
-                        }
-                        return const CircularProgressIndicator();
-                      }),
-                ],
+                body: TabBarView(
+                  children: [
+                    FutureBuilder<List<dynamic>>(
+                        future: futureEvents,
+                        builder: (context, snapshot) {
+                          if (snapshot.hasData) {
+                            final repos = snapshot.data!;
+                            return EventCard(repos[0]['day1'], context, size);
+                          }
+                          return const CircularProgressIndicator();
+                        }),
+                    FutureBuilder<List<dynamic>>(
+                        future: futureEvents,
+                        builder: (context, snapshot) {
+                          if (snapshot.hasData) {
+                            final repos = snapshot.data!;
+                            return EventCard(repos[1]['day2'], context, size);
+                          }
+                          return const CircularProgressIndicator();
+                        }),
+                    FutureBuilder<List<dynamic>>(
+                        future: futureEvents,
+                        builder: (context, snapshot) {
+                          if (snapshot.hasData) {
+                            final repos = snapshot.data!;
+                            return EventCard(repos[2]['day3'], context, size);
+                          }
+                          return const CircularProgressIndicator();
+                        }),
+                  ],
+                ),
               ),
             ),
           ),
-        ),),
+        ),
       ),
     );
   }
 
   Widget EventCard(List<dynamic> repos, BuildContext context, Size size) =>
       ListView.builder(
+        // padding: EdgeInsets.zero,
         itemCount: repos.length,
         itemBuilder: (context, index) {
           final repo = repos[index];
-          return  Padding(
+          return Padding(
             padding: EdgeInsets.only(
               left: size.width * 0.04,
               right: size.width * 0.04,
@@ -186,7 +192,7 @@ class _EventsScreenState extends State<EventsScreen> {
             child: Column(
               children: [
                 SizedBox(
-                  height: size.height*0.02,
+                  height: size.height * 0.02,
                 ),
                 Card(
                   child: ClipRRect(
@@ -213,9 +219,9 @@ class _EventsScreenState extends State<EventsScreen> {
                               style: GoogleFonts.bungeeShade(
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.black54
-                                // fontStyle: FontStyle.
-                              ),
+                                  color: Color.fromARGB(180, 0, 0, 0)
+                                  // fontStyle: FontStyle.
+                                  ),
                             ),
                             SizedBox(
                               height: size.height * 0.01,
@@ -245,12 +251,12 @@ class _EventsScreenState extends State<EventsScreen> {
                                     ),
                                   ),
                                 ),
-
                                 Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 20.0),
                                   child: Container(
-                                    height: size.width*0.23,
-                                    width: size.width*0.23,
+                                    height: size.width * 0.23,
+                                    width: size.width * 0.23,
                                     color: Colors.blue,
                                   ),
                                 )
