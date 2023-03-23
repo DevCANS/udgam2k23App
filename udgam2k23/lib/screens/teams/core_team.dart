@@ -138,7 +138,7 @@ class _CoreTeamState extends State<CoreTeam> {
               ),
 
               TeamCard(
-                imagePath: "assets/teams/CoreTeam/Z.jpg",
+                imagePath: "assets/teams/CoreTeam/Z.JPG",
                 name: "Zameer Ahmad Ansari",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+919588633193"),

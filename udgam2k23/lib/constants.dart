@@ -26,3 +26,8 @@ const radialGrad = RadialGradient(
   center: Alignment.center,
   radius: 1.2,
 );
+const linGrad = LinearGradient(
+  colors: [Color(0xffaaccff), Color(0xff9074e2)],
+  begin: Alignment.topLeft,
+  end: Alignment.bottomRight,
+);

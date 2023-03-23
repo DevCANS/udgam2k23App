@@ -76,7 +76,7 @@ class _WebTeamState extends State<WebTeam> {
               ),
               TeamCard(
                 imagePath: "assets/teams/WebTeam/Jigmee.jpg",
-                name: "Jigmee Wangchuk Sherpa",
+                name: "Jigmee W. Sherpa",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+917908546144"),
                 onPressed2: () =>
