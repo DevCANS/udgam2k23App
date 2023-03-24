@@ -97,7 +97,7 @@ class _EventTeamState extends State<EventTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/EventTeam/B.jpg",
+                imagePath: "assets/teams/EventTeam/S.jpg",
                 name: "Swetha Patel ",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+919490873267"),

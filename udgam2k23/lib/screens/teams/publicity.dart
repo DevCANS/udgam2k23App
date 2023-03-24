@@ -65,7 +65,7 @@ class _PublicityTeamState extends State<PublicityTeam> {
               ),
               TeamCard(
                 imagePath: "assets/teams/PuTeam/B.jpg",
-                name: "Balwant Singh Chauhan ",
+                name: "Balwant Singh",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+919548552262"),
                 onPressed2: () =>

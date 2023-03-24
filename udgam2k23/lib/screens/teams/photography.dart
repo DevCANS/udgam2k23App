@@ -64,8 +64,8 @@ class PhotographyTeamState extends State<PhotographyTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/PhTeam/A.jpg",
-                name: "Banothu Abhisheknayak",
+                imagePath: "assets/teams/PhTeam/A.jpeg",
+                name: "B. Abhisheknayak",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+919700419650"),
                 onPressed2: () =>
@@ -76,7 +76,7 @@ class PhotographyTeamState extends State<PhotographyTeam> {
               ),
               TeamCard(
                 imagePath: "assets/teams/PhTeam/S.jpg",
-                name: "Namepalli Sai Santhosh",
+                name: "N. Sai Santhosh",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+918374627611"),
                 onPressed2: () =>

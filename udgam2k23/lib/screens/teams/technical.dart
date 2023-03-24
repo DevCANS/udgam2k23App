@@ -64,7 +64,7 @@ class _TechnicalTeamState extends State<TechnicalTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/TechnicalTeam/H.jpg",
+                imagePath: "assets/teams/TechnicalTeam/H.png",
                 name: "Hansraj Singh Rawat ",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+919414705810"),
@@ -97,7 +97,7 @@ class _TechnicalTeamState extends State<TechnicalTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/TechnicalTeam/An.jpg",
+                imagePath: "assets/teams/TechnicalTeam/An.jpeg",
                 name: "Anirudh Ghildiyal",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+918004390973"),

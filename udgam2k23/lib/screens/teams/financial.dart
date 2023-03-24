@@ -64,7 +64,7 @@ class _FinancialTeamState extends State<FinancialTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/FinancialTeam/J.jpg",
+                imagePath: "assets/teams/FinancialTeam/J.jpeg",
                 name: "Jitendra Kumar",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+919559024523"),
