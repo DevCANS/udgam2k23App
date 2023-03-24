@@ -48,7 +48,7 @@ class _MarketingTeamState extends State<MarketingTeam> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        "Marketing Team",
+                        " Marketing Team",
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

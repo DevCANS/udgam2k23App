@@ -75,7 +75,7 @@ class _CulturalTeamState extends State<CulturalTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/CulturalTeam/R.jpg",
+                imagePath: "assets/teams/CulturalTeam/R.jpeg",
                 name: "Riyansh",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+910000000000"),
@@ -108,7 +108,7 @@ class _CulturalTeamState extends State<CulturalTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/CulturalTeam/Sar.jpg",
+                imagePath: "assets/teams/CulturalTeam/Sar.jpeg",
                 name: "Sarath Namburi ",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+919603583249"),

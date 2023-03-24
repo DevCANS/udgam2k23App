@@ -51,10 +51,10 @@ class DevCard extends StatelessWidget {
                         width: size.width * 0.04,
                       ),
                       CircleAvatar(
-                          radius: 50,
+                          radius: size.height*0.06,
                           backgroundColor: Colors.white,
                           child: CircleAvatar(
-                            radius: 48,
+                            radius: size.height*0.055,
                             foregroundImage: AssetImage(imagePath),
                           ),
                         ),
@@ -113,71 +113,72 @@ class DevCard extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
                                   CircleAvatar(
-                                    radius: 18,
+                                    radius: size.width*0.042,
                                     backgroundColor: Colors.white,
+
                                     child: Center(
                                       child:IconButton(
                                         onPressed: github,
-                                        icon: const FaIcon(
+                                        icon: FaIcon(
                                           FontAwesomeIcons.github,
                                           color: Colors.black,
-                                          size: 22,
+                                          size: size.width*0.05,
                                         ),
                                       ),
                                     ),
                                   ),
                                   CircleAvatar(
-                                    radius: 18,
+                                    radius: size.width*0.042,
                                     backgroundColor: Colors.white,
                                     child: Center(
                                       child:IconButton(
                                       onPressed: linkedin,
-                                        icon: const FaIcon(
+                                        icon: FaIcon(
                                           FontAwesomeIcons.linkedin,
                                           color: Colors.black,
-                                          size: 22,
+                                          size: size.width*0.05,
                                         ),
                                     ),
                                     ),
                                   ),
                                   CircleAvatar(
-                                    radius: 18,
+                                    radius: size.width*0.042,
                                     backgroundColor: Colors.white,
                                     child: Center(
                                       child:IconButton(
                                         onPressed: instagram,
-                                        icon: const FaIcon(
+                                        icon: FaIcon(
                                           FontAwesomeIcons.instagram,
                                           color: Colors.black,
-                                          size: 22,
+                                          size: size.width*0.052,
                                         ),
                                       ),
                                     ),
                                   ),
                                   CircleAvatar(
-                                    radius: 18,
+                                    radius: size.width*0.042,
                                     backgroundColor: Colors.white,
                                     child: Center(
                                       child:IconButton(
                                         onPressed: phone,
-                                        icon: const FaIcon(
+                                        icon: FaIcon(
                                           FontAwesomeIcons.phone,
                                           color: Colors.black,
-                                          size: 20,
+                                          size: size.width*0.045,
                                         ),
                                       ),
                                     ),
                                   ),
                                   CircleAvatar(
-                                    radius: 18,
+                                    radius: size.width*0.042,
                                     backgroundColor: Colors.white,
                                     child: Center(
                                       child:IconButton(
                                         onPressed: mail,
-                                        icon: const FaIcon(
+                                        icon: FaIcon(
                                           FontAwesomeIcons.solidEnvelope,
                                           color: Colors.black,
-                                          size: 21,
+                                          size: size.width*0.045,
                                         ),
                                       ),
                                     ),

@@ -64,7 +64,7 @@ class _CADTeamState extends State<CADTeam> {
                 height: size.height * 0.02,
               ),
               TeamCard(
-                imagePath: "assets/teams/DisciplineTeam/AniketGupta.JPG",
+                imagePath:  "assets/teams/DisciplineTeam/AniketGupta.JPG",
                 name: "Aniket Gupta",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+916296014362"),
@@ -86,7 +86,7 @@ class _CADTeamState extends State<CADTeam> {
                 height: size.height * 0.02,
               ),
               TeamCard(
-                imagePath: "assets/teams/DisciplineTeam/M.jpg",
+                imagePath: "assets/teams/DisciplineTeam/m.jpg",
                 name: "Mini ",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+919079281922"),

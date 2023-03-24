@@ -48,7 +48,7 @@ class _InfrastructureTeamState extends State<InfrastructureTeam> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        "Infrastructure and Wind-Up Team",
+                        " Infrastructure Team",
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

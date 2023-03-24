@@ -64,7 +64,7 @@ class _SponsorshipTeamState extends State<SponsorshipTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/SponsorTeam/A.jpg",
+                imagePath: "assets/teams/SponsorTeam/A.JPG",
                 name: "Akriti Jha ",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+918016664783"),
@@ -97,7 +97,7 @@ class _SponsorshipTeamState extends State<SponsorshipTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/SponsorTeam/T.jpg",
+                imagePath: "assets/teams/SponsorTeam/T.JPG",
                 name: "Tathagat Bhanj Dev ",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+917430918783"),

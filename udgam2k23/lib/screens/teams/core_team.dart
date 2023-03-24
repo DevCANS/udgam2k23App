@@ -150,7 +150,7 @@ class _CoreTeamState extends State<CoreTeam> {
               ),
 
               TeamCard(
-                imagePath: "assets/teams/CoreTeam/Sampath.jpg",
+                imagePath: "assets/teams/CoreTeam/Sampath.png",
                 name: "Palisetti Sai Sampath",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+916303824117"),
@@ -186,7 +186,7 @@ class _CoreTeamState extends State<CoreTeam> {
               ),
 
               TeamCard(
-                imagePath: "assets/teams/CoreTeam/Sakshi.jpg",
+                imagePath: "assets/teams/CoreTeam/Sakshi.png",
                 name: "Sakshi Sharma",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+916389235119"),
@@ -198,7 +198,7 @@ class _CoreTeamState extends State<CoreTeam> {
               ),
 
               TeamCard(
-                imagePath: "assets/teams/CoreTeam/Swastik.jpg",
+                imagePath: "assets/teams/CoreTeam/Swastik.jpeg",
                 name: "Swastik Chakraborty ",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+917980375230"),

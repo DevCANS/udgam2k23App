@@ -76,7 +76,7 @@ class _ContentTeamState extends State<ContentTeam> {
               ),
               TeamCard(
                 imagePath: "assets/teams/ContentTeam/ShubhamSharma.jpg",
-                name: "Shubham Kumar Sharma",
+                name: "Shubham Sharma",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+917098213317"),
                 onPressed2: () =>

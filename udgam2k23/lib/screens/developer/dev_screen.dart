@@ -1,6 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
+import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/methods.dart';
 import 'package:udgam2k23/screens/developer/widget/dev_card.dart';
 import 'package:udgam2k23/widgets/custom_page_route.dart';
@@ -49,12 +50,12 @@ class _DeveloperScreenState extends State<DeveloperScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        "Developers",
+                        " Developers",
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,
                           fontWeight: FontWeight.w500,
-                          color: Colors.white,
+                          color: backgroundColor,
                         ),
                       ),
                     ],

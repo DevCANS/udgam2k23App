@@ -97,7 +97,7 @@ class _AdvisoryTeamState extends State<AdvisoryTeam> {
                 height: size.height * 0.02,
               ),
               TeamCard(
-                imagePath: "assets/teams/AdvisoryTeam/SauravKumar.jpg",
+                imagePath: "assets/teams/AdvisoryTeam/SauravKumar.jfif",
                 name: "Saurav Kumar",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+917761907120"),
