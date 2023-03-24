@@ -37,7 +37,7 @@ class DevCard extends StatelessWidget {
               12,
             ),
             child: Container(
-              height: size.height * 0.22,
+              height: size.height * 0.20,
               width: double.infinity,
               decoration: const BoxDecoration(
                 gradient: linearGrad3,
