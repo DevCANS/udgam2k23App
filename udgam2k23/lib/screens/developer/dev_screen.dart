@@ -35,9 +35,7 @@ class _DeveloperScreenState extends State<DeveloperScreen> {
               Container(
                 height: size.height * 0.065,
                 decoration: BoxDecoration(
-                  color: const Color(
-                    0xff00386d,
-                  ),
+                  color: Color(0xffe5b5cc),
                   borderRadius: BorderRadius.circular(
                     10,
                   ),
@@ -55,7 +53,7 @@ class _DeveloperScreenState extends State<DeveloperScreen> {
                           fontFamily: 'Samarkan',
                           fontSize: 30,
                           fontWeight: FontWeight.w500,
-                          color: backgroundColor,
+                          color: Colors.black87,
                         ),
                       ),
                     ],

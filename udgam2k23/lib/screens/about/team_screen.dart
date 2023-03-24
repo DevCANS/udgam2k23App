@@ -66,7 +66,7 @@ class _TeamScreenState extends State<TeamScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        "gallery",
+                        " teams",
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

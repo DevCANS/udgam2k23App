@@ -94,7 +94,7 @@ class DevCard extends StatelessWidget {
                             Text(
                               "`$tagLine`",
                               style: GoogleFonts.vt323(
-                                fontSize: 16,
+                                fontSize: 17,
                                 color: Colors.black87,
                                 //fontStyle: FontStyle.italic,
                                 // fontWeight: FontWeight.w100,
@@ -119,7 +119,7 @@ class DevCard extends StatelessWidget {
                                         onPressed: github,
                                         icon: FaIcon(
                                           FontAwesomeIcons.github,
-                                          color: Colors.black,
+                                          color: Colors.black87,
                                           size: size.width * 0.05,
                                         ),
                                       ),
@@ -133,7 +133,7 @@ class DevCard extends StatelessWidget {
                                         onPressed: linkedin,
                                         icon: FaIcon(
                                           FontAwesomeIcons.linkedin,
-                                          color: Colors.black,
+                                          color: Colors.black87,
                                           size: size.width * 0.05,
                                         ),
                                       ),
@@ -147,7 +147,7 @@ class DevCard extends StatelessWidget {
                                         onPressed: instagram,
                                         icon: FaIcon(
                                           FontAwesomeIcons.instagram,
-                                          color: Colors.black,
+                                          color: Colors.black87,
                                           size: size.width * 0.052,
                                         ),
                                       ),
@@ -161,7 +161,7 @@ class DevCard extends StatelessWidget {
                                         onPressed: phone,
                                         icon: FaIcon(
                                           FontAwesomeIcons.phone,
-                                          color: Colors.black,
+                                          color: Colors.black87,
                                           size: size.width * 0.045,
                                         ),
                                       ),
@@ -175,7 +175,7 @@ class DevCard extends StatelessWidget {
                                         onPressed: mail,
                                         icon: FaIcon(
                                           FontAwesomeIcons.solidEnvelope,
-                                          color: Colors.black,
+                                          color: Colors.black87,
                                           size: size.width * 0.045,
                                         ),
                                       ),

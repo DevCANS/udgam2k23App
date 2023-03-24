@@ -20,9 +20,9 @@ const linearGrad2 = LinearGradient(
 );
 const linearGrad3 = LinearGradient(
   colors: [
-    Color.fromARGB(183, 149, 230, 231),
-    Color.fromARGB(255, 235, 236, 218),
-    Color.fromARGB(207, 234, 175, 152),
+    Color.fromARGB(230, 231, 179, 149),
+    // Color.fromARGB(255, 235, 236, 218),
+    Color.fromARGB(207, 219, 160, 238),
   ],
 );
 
