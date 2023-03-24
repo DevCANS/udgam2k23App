@@ -5,6 +5,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:udgam2k23/constants.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 const linGrad = LinearGradient(
   colors: [Color(0xffaaf2ff), Color(0xffe990fc)],
@@ -62,10 +63,10 @@ class _EventsScreenState extends State<EventsScreen> {
                   gradient: RadialGradient(
                     colors: [
                       Color.fromARGB(194, 249, 130, 255),
-                      Color.fromARGB(196, 67, 224, 255)
+                      Color.fromARGB(255, 211, 204, 255),
                     ],
                     center: Alignment.center,
-                    radius: 2,
+                    radius: 0.8,
                   ),
                   shape: BoxShape.rectangle,
                   borderRadius: BorderRadius.all(Radius.circular(30)),
@@ -209,7 +210,7 @@ class _EventsScreenState extends State<EventsScreen> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: Container(
-                      height: size.height * 0.28,
+                      height: size.height * 0.25,
                       width: double.infinity,
                       decoration: const BoxDecoration(
                         gradient: linGrad,
@@ -253,7 +254,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                         right: size.width * 0.03,
                                       ),
                                       child: Text(
-                                        "Few lines about the event.",
+                                        repos[index]['tagline'],
                                         style: GoogleFonts.poppins(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w400,
@@ -268,7 +269,17 @@ class _EventsScreenState extends State<EventsScreen> {
                                   child: Container(
                                     height: size.width * 0.23,
                                     width: size.width * 0.23,
-                                    color: Colors.blue,
+                                    // color: Colors.black,
+                                    child: Image.network(
+                                        repos[index]['imageLink']),
+                                    // decoration: BoxDecoration(
+                                    //   shape: BoxShape.rectangle,
+                                    //   image: DecorationImage(
+                                    //     image: NetworkImage(
+                                    //         repos[index]['imageLink']),
+                                    //     fit: BoxFit.fill,
+                                    //   ),
+                                    // ),
                                   ),
                                 )
                               ],
@@ -299,7 +310,8 @@ class _EventsScreenState extends State<EventsScreen> {
                                   ],
                                 ),
                                 ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () =>
+                                      launch(repos[index]['registration_link']),
                                   style: ElevatedButton.styleFrom(
                                     backgroundColor: const Color(0xFF6CFFB9),
                                     shape: RoundedRectangleBorder(
