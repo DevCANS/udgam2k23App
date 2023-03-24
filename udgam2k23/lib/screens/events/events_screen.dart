@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import "package:http/http.dart" as http;
 import 'dart:async';
 import 'dart:convert';
-
+import 'package:xen_popup_card/xen_card.dart';
 import 'package:udgam2k23/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -207,134 +208,406 @@ class _EventsScreenState extends State<EventsScreen> {
                   height: size.height * 0.005, // ye hai size
                 ),
                 Card(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Container(
-                      height: size.height * 0.25,
-                      width: double.infinity,
-                      decoration: const BoxDecoration(
-                        gradient: linGrad,
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.only(
-                          left: size.width * 0.03,
-                          right: size.width * 0.03,
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                              height: size.height * 0.02,
+                  child: InkWell(
+                    onTap:()=>showDialog(
+                    context: context,
+                    builder: (builder) => XenPopupCard(
+
+                      body: ListView(
+                        children: [
+                            SingleChildScrollView(
+                            child: Padding(
+                            padding: EdgeInsets.only(
+                            left: size.width * 0.002,
+                              right: size.width * 0.002,
                             ),
-                            Text(
-                              repos[index]['title'],
-                              style: GoogleFonts.bungeeShade(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color.fromARGB(180, 0, 0, 0)
-                                  // fontStyle: FontStyle.
-                                  ),
-                            ),
-                            SizedBox(
-                              height: size.height * 0.01,
-                            ),
-                            Row(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(15),
-                                  child: Container(
-                                    height: size.height * 0.1,
-                                    width: size.width * 0.5,
-                                    color: Colors.white70,
-                                    child: Padding(
-                                      padding: EdgeInsets.only(
-                                        left: size.width * 0.03,
-                                        top: size.width * 0.02,
-                                        bottom: size.width * 0.02,
-                                        right: size.width * 0.03,
+                            child:Column(
+                                  children:[
+
+                                    Center(
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(
+                                          15,
+                                        ),
+                                        child: SizedBox(
+                                          height: size.height * 0.35,
+                                          width: double.infinity,
+                                          child: Image.network(
+                                              repos[index]['imageLink']),
+                                        ),
                                       ),
-                                      child: Text(
-                                        repos[index]['tagline'],
-                                        style: GoogleFonts.poppins(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w400,
+                                    ),
+                                    SizedBox(
+                                      height: size.height * 0.02,
+                                    ),
+                                    Column(
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          repos[index]['title'],
+                                          style: GoogleFonts.berkshireSwash(
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 24,
+                                          ),
+                                        ),
+                                        Divider(
+                                          color: dividerColor,
+                                          thickness: size.height * 0.01,
+                                        ),
+                                      ],
+                                    ),
+                                    Column(
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          repos[index]['tagline'],
+                                          style: GoogleFonts.berkshireSwash(
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 24,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+
+                                    //time & venue
+                                    SizedBox(
+                                      height: size.height * 0.01,
+                                    ),
+                                    Container(
+                                            decoration: BoxDecoration(
+                                              color: backgroundColor,
+                                              borderRadius: BorderRadius.circular(
+                                                10,
+                                              ),
+                                            ),
+                                            height: size.height * 0.045,
+                                            width: double.infinity,
+                                            child: Padding(
+                                              padding: EdgeInsets.only(
+                                                left: size.width * 0.02,
+                                              ),
+                                              child:Center(
+                                                child: Text(
+                                                  repos[index]['time'],
+                                                  style: GoogleFonts.poppins(
+                                                    fontSize: 22,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                    SizedBox(
+                                      height: size.height*0.01,
+                                    ),
+
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: backgroundColor,
+                                        borderRadius: BorderRadius.circular(
+                                          10,
+                                        ),
+                                      ),
+                                      height: size.height * 0.045,
+                                      width: double.infinity,
+                                      child: Padding(
+                                        padding: EdgeInsets.only(
+                                          left: size.width * 0.02,
+                                        ),
+                                        child:Center(
+                                          child: Text(
+                                            repos[index]['venue'],
+                                            style: GoogleFonts.lexend(
+                                              fontSize: 22,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: size.height*0.01,
+                                    ),
+
+                                    Card(
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(
+                                          12,
+                                        ),
+                                        child: Container(
+                                          height: size.height * 0.092,
+                                          width: double.infinity,
+                                          decoration: const BoxDecoration(
+                                            gradient: linGrad,
+                                          ),
+                                          child: Padding(
+                                            padding: EdgeInsets.only(top:size.height*0.005,left: size.width*0.02,),
+
+                                              child:Row(
+                                                children: [
+
+                                                  Column(
+                                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                                      children: [
+
+                                                        Text(
+                                                          "text",
+                                                          style: GoogleFonts.poppins(
+                                                            fontSize: size.height*0.02,
+                                                            fontWeight: FontWeight.w500,
+                                                            color: Colors.black,
+                                                          ),
+                                                        ),
+
+                                                        Row(
+                                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                                            mainAxisAlignment: MainAxisAlignment.start,
+                                                            children: [
+                                                              IconButton(
+                                                                onPressed: (){},
+                                                                icon: FaIcon(
+                                                                  FontAwesomeIcons.phone,
+                                                                  color: Colors.black,
+                                                                  size: size.height*0.018,
+                                                                ),
+                                                              ),
+                                                              IconButton(
+                                                                onPressed: (){},
+                                                                icon: Icon(
+                                                                  Icons.mail,
+                                                                  color: Colors.black,
+                                                                  size: size.height*0.018,
+                                                                ),
+                                                              ),
+                                                            ],
+                                                          ),
+
+                                                      ],
+                                                    ),
+
+                                                ],
+                                              ),
+
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: size.height*0.01,
+                                    ),
+                                    InkWell(
+                                      onTap: () =>
+                                          launchUrl(repos[index]['registration_link']),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color:const Color(0xFF6CFFB9),
+                                          borderRadius: BorderRadius.circular(
+                                            10,
+                                          ),
+                                        ),
+                                        height: size.height * 0.045,
+                                        width: double.infinity,
+                                        child: Padding(
+                                          padding: EdgeInsets.only(
+                                            left: size.width * 0.02,
+                                          ),
+                                          child: const Center(
+                                            child: Text(
+                                              "Register",
+                                              style: TextStyle(
+                                                fontSize: 25,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: size.height*0.01,
+                                    ),
+                                    Container(
+                                      decoration: BoxDecoration(
+
+                                        borderRadius: BorderRadius.circular(
+                                          10,
+                                        ),
+                                      ),
+                                      height: size.height * 0.9,
+                                      width: double.infinity,
+                                      child: Padding(
+                                        padding: EdgeInsets.only(
+                                          left: size.width * 0.02,
+                                        ),
+                                        child: Text(
+                                            "Rules- nested",
+                                            style: GoogleFonts.bungeeShade(
+                                              fontSize: 25,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+
+                                      ),
+                                    ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  ],
+                          ),
+                      ),
+                      ),
+
+
+
+
+
+
+
+
+                        ],
+                      ),
+                    ),
+                  ),
+                    child:ClipRRect(
+                      borderRadius: BorderRadius.circular(15),
+                      child: Container(
+                        height: size.height * 0.25,
+                        width: double.infinity,
+                        decoration: const BoxDecoration(
+                          gradient: linGrad,
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            left: size.width * 0.03,
+                            right: size.width * 0.03,
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                height: size.height * 0.02,
+                              ),
+                              Text(
+                                repos[index]['title'],
+                                style: GoogleFonts.bungeeShade(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    color: Color.fromARGB(180, 0, 0, 0)
+                                  // fontStyle: FontStyle.
+                                ),
+                              ),
+                              SizedBox(
+                                height: size.height * 0.01,
+                              ),
+                              Row(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(15),
+                                    child: Container(
+                                      height: size.height * 0.1,
+                                      width: size.width * 0.5,
+                                      color: Colors.white70,
+                                      child: Padding(
+                                        padding: EdgeInsets.only(
+                                          left: size.width * 0.03,
+                                          top: size.width * 0.02,
+                                          bottom: size.width * 0.02,
+                                          right: size.width * 0.03,
+                                        ),
+                                        child: Text(
+                                          repos[index]['tagline'],
+                                          style: GoogleFonts.poppins(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w400,
+                                          ),
                                         ),
                                       ),
                                     ),
                                   ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 20.0),
-                                  child: Container(
-                                    height: size.width * 0.23,
-                                    width: size.width * 0.23,
-                                    // color: Colors.black,
-                                    child: Image.network(
-                                        repos[index]['imageLink']),
-                                    // decoration: BoxDecoration(
-                                    //   shape: BoxShape.rectangle,
-                                    //   image: DecorationImage(
-                                    //     image: NetworkImage(
-                                    //         repos[index]['imageLink']),
-                                    //     fit: BoxFit.fill,
-                                    //   ),
-                                    // ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 20.0),
+                                    child: Container(
+                                      height: size.width * 0.23,
+                                      width: size.width * 0.23,
+                                      // color: Colors.black,
+                                      child: Image.network(
+                                          repos[index]['imageLink']),
+                                      // decoration: BoxDecoration(
+                                      //   shape: BoxShape.rectangle,
+                                      //   image: DecorationImage(
+                                      //     image: NetworkImage(
+                                      //         repos[index]['imageLink']),
+                                      //     fit: BoxFit.fill,
+                                      //   ),
+                                      // ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: size.height * 0.015,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Time: ${repos[index]['time']}",
+                                        style: GoogleFonts.lexend(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                      Text(
+                                        "Venue: ",
+                                        style: GoogleFonts.lexend(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: size.height * 0.015,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "Time: ${repos[index]['time']}",
-                                      style: GoogleFonts.lexend(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w400,
+                                  ElevatedButton(
+                                    onPressed: () =>
+                                        launch(repos[index]['registration_link']),
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: const Color(0xFF6CFFB9),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(
+                                          15,
+                                        ),
                                       ),
                                     ),
-                                    Text(
-                                      "Venue: ",
-                                      style: GoogleFonts.lexend(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w400,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                ElevatedButton(
-                                  onPressed: () =>
-                                      launch(repos[index]['registration_link']),
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: const Color(0xFF6CFFB9),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(
-                                        15,
+                                    child: Text(
+                                      "Register",
+                                      style: GoogleFonts.alumniSans(
+                                        fontSize: 24,
+                                        color: Colors.black,
                                       ),
                                     ),
                                   ),
-                                  child: Text(
-                                    "Register",
-                                    style: GoogleFonts.alumniSans(
-                                      fontSize: 24,
-                                      color: Colors.black,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                  ),
+                ),
                 ),
               ],
             ),

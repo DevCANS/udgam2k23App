@@ -589,6 +589,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
+  xen_popup_card:
+    dependency: "direct main"
+    description:
+      name: xen_popup_card
+      sha256: "1e66d355785bb73e4289e730d9b1b74383e754ac336a6f53f9403e5536a2104d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.1"
 sdks:
   dart: ">=2.19.3 <3.0.0"
   flutter: ">=3.3.0"
