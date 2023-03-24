@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
 import "package:http/http.dart" as http;
 import 'dart:async';
 import 'dart:convert';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import "package:udgam2k23/constants.dart";
+
+import 'package:udgam2k23/constants.dart';
+
+const linGrad = LinearGradient(
+  colors: [Color(0xffaaf2ff), Color(0xffe990fc)],
+  begin: Alignment.topLeft,
+  end: Alignment.bottomRight,
+);
+
+const radialGrad = RadialGradient(
+  colors: [Color(0xff2095f3), Color(0xff004d94)],
+  center: Alignment.center,
+  radius: 1.2,
+);
 
 class EventsScreen extends StatefulWidget {
   const EventsScreen({Key? key}) : super(key: key);
@@ -39,125 +50,137 @@ class _EventsScreenState extends State<EventsScreen> {
     final Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      body: Container(
-        height: size.height * 0.91,
-        child: Padding(
-          padding: EdgeInsets.only(top: size.height * 0.01),
-          child: Center(
-            child: DefaultTabController(
-              length: 3,
-              child: Scaffold(
-                appBar: AppBar(
-                  toolbarHeight: size.height * 0.035,
-                  backgroundColor: backgroundColor,
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.vertical(
-                      top: Radius.circular(30),
-                      bottom: Radius.circular(30),
-                    ),
-                  ),
-                  bottom: TabBar(
-                    tabs: [
-                      Tab(
-                        icon: CircleAvatar(
-                          radius: size.height * 0.02,
-                          backgroundColor: Colors.white,
-                          child: Center(
-                            child: FaIcon(
-                              FontAwesomeIcons.one,
-                              color: Colors.black,
-                              size: size.height * 0.025,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Tab(
-                        icon: CircleAvatar(
-                          radius: size.height * 0.02,
-                          backgroundColor: Colors.white,
-                          child: Center(
-                            child: FaIcon(
-                              FontAwesomeIcons.two,
-                              color: Colors.black,
-                              size: size.height * 0.025,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Tab(
-                        icon: CircleAvatar(
-                          radius: size.height * 0.02,
-                          backgroundColor: Colors.white,
-                          child: Center(
-                            child: FaIcon(
-                              FontAwesomeIcons.three,
-                              color: Colors.black,
-                              size: size.height * 0.025,
-                            ),
-                          ),
-                        ),
-                      ),
+      body: Center(
+        child: DefaultTabController(
+          length: 3,
+          child: Scaffold(
+            appBar: AppBar(
+              backgroundColor: backgroundColor,
+              centerTitle: true,
+              bottom: TabBar(
+                indicator: const BoxDecoration(
+                  gradient: RadialGradient(
+                    colors: [
+                      Color.fromARGB(194, 249, 130, 255),
+                      Color.fromARGB(196, 67, 224, 255)
                     ],
+                    center: Alignment.center,
+                    radius: 2,
                   ),
-                  title: Container(
-                    height: size.height * 0.065,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(
-                        10,
-                      ),
+                  shape: BoxShape.rectangle,
+                  borderRadius: BorderRadius.all(Radius.circular(30)),
+                  // backgroundBlendMode: BlendMode.overlay,
+                  color: Colors.white,
+                ),
+                indicatorColor: Colors.black87,
+                tabs: [
+                  Tab(
+                    child: Column(
+                      children: const [
+                        Text(
+                          'Day',
+                          style: TextStyle(color: Colors.black87),
+                        ),
+                        Icon(
+                          Icons.looks_one_rounded,
+                          color: Colors.black87,
+                        ),
+                      ],
                     ),
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                        left: size.width * 0.02,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
-                          Text(
-                            " events",
-                            style: TextStyle(
-                              fontFamily: 'Samarkan',
-                              fontSize: 30,
-                              color: Colors.black87,
-                              fontWeight: FontWeight.w500,
-                            ),
+                  ),
+                  Tab(
+                    child: Column(
+                      children: const [
+                        Text(
+                          'Day',
+                          style: TextStyle(color: Colors.black87),
+                        ),
+                        Icon(
+                          Icons.looks_two_rounded,
+                          color: Colors.black87,
+                        ),
+                      ],
+                    ),
+                  ),
+                  Tab(
+                    child: Column(
+                      children: const [
+                        Text(
+                          'Day',
+                          style: TextStyle(color: Colors.black87),
+                        ),
+                        Icon(
+                          Icons.looks_3_rounded,
+                          color: Colors.black87,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              title: const Text(
+                'events',
+                style: TextStyle(
+                  fontFamily: 'Samarkan',
+                  fontSize: 40,
+                  color: Colors.black87,
+                ),
+              ),
+            ),
+            body: Container(
+              height: size.height * 0.75,
+              // width: size.width * 0.9,
+              child: TabBarView(
+                children: [
+                  FutureBuilder<List<dynamic>>(
+                      future: futureEvents,
+                      builder: (context, snapshot) {
+                        if (snapshot.hasData) {
+                          final repos = snapshot.data!;
+                          return EventCard(repos[0]['day1'], context, size);
+                        }
+                        return const Center(
+                          child: CircularProgressIndicator(
+                            backgroundColor: Color(0xFFe3dfff),
+                            valueColor: AlwaysStoppedAnimation(Colors.black45),
+                            strokeWidth: 5,
+                            value: 0.5,
                           ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-                body: TabBarView(
-                  children: [
-                    FutureBuilder<List<dynamic>>(
-                        future: futureEvents,
-                        builder: (context, snapshot) {
-                          if (snapshot.hasData) {
-                            final repos = snapshot.data!;
-                            return EventCard(repos[0]['day1'], context, size);
-                          }
-                          return const CircularProgressIndicator();
-                        }),
-                    FutureBuilder<List<dynamic>>(
-                        future: futureEvents,
-                        builder: (context, snapshot) {
-                          if (snapshot.hasData) {
-                            final repos = snapshot.data!;
-                            return EventCard(repos[1]['day2'], context, size);
-                          }
-                          return const CircularProgressIndicator();
-                        }),
-                    FutureBuilder<List<dynamic>>(
-                        future: futureEvents,
-                        builder: (context, snapshot) {
-                          if (snapshot.hasData) {
-                            final repos = snapshot.data!;
-                            return EventCard(repos[2]['day3'], context, size);
-                          }
-                          return const CircularProgressIndicator();
-                        }),
-                  ],
-                ),
+                        );
+                      }),
+                  FutureBuilder<List<dynamic>>(
+                      future: futureEvents,
+                      builder: (context, snapshot) {
+                        if (snapshot.hasData) {
+                          final repos = snapshot.data!;
+                          return EventCard(repos[1]['day2'], context, size);
+                        }
+                        return const Center(
+                          child: CircularProgressIndicator(
+                            backgroundColor: Color(0xFFe3dfff),
+                            valueColor: AlwaysStoppedAnimation(Colors.black45),
+                            strokeWidth: 5,
+                            value: 0.5,
+                          ),
+                        );
+                      }),
+                  FutureBuilder<List<dynamic>>(
+                      future: futureEvents,
+                      builder: (context, snapshot) {
+                        if (snapshot.hasData) {
+                          final repos = snapshot.data!;
+                          return EventCard(repos[2]['day3'], context, size);
+                        }
+                        return const Center(
+                          child: CircularProgressIndicator(
+                            backgroundColor: Color(0xFFe3dfff),
+                            valueColor: AlwaysStoppedAnimation(Colors.black45),
+                            strokeWidth: 5,
+                            value: 0.5,
+                          ),
+                        );
+                      }),
+                ],
               ),
             ),
           ),
@@ -180,7 +203,7 @@ class _EventsScreenState extends State<EventsScreen> {
             child: Column(
               children: [
                 SizedBox(
-                  height: size.height * 0.02,
+                  height: size.height * 0.005, // ye hai size
                 ),
                 Card(
                   child: ClipRRect(
