@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/methods.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:udgam2k23/screens/about/merchandise_screen.dart';
 import 'package:udgam2k23/screens/about/team_screen.dart';
 import 'package:udgam2k23/screens/developer/dev_screen.dart';
 
@@ -456,7 +457,13 @@ class _AboutScreenState extends State<AboutScreen> {
                 ),
 
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const MerchandiseScreen(),
+                      ),
+                    );
+                  },
                   child: Container(
                     height: size.height * 0.085,
                     width: size.width * 0.92,
