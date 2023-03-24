@@ -18,6 +18,13 @@ const linearGrad2 = LinearGradient(
     Color(0xFFA2CCF3),
   ],
 );
+const linearGrad3 = LinearGradient(
+  colors: [
+    Color.fromARGB(183, 149, 230, 231),
+    Color.fromARGB(255, 235, 236, 218),
+    Color.fromARGB(207, 234, 175, 152),
+  ],
+);
 
 const splashColor = Color.fromARGB(255, 105, 104, 104);
 

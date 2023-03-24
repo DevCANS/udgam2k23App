@@ -1,5 +1,3 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
 import 'package:udgam2k23/methods/methods.dart';
 import 'package:udgam2k23/screens/teams/widgets/team_card.dart';
@@ -60,6 +58,17 @@ class _AppTeamState extends State<AppTeam> {
                     ],
                   ),
                 ),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+              TeamCard(
+                imagePath: "assets/teams/AppTeam/Dee.jpg",
+                name: "Dhireen Kumar Rajak",
+                designation: "Member",
+                onPressed1: () => method.launch("tel:+919382038024"),
+                onPressed2: () =>
+                    method.launch("mailto:b200040@nitsikkim.ac.in"),
               ),
             ],
           ),

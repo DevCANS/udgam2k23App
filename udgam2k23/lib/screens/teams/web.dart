@@ -64,7 +64,7 @@ class _WebTeamState extends State<WebTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/WebTeam/Vishal.jpg",
+                imagePath: "assets/teams/WebTeam/Vishal.jpeg",
                 name: "Vishal Kumar",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+919608851340"),
@@ -75,7 +75,7 @@ class _WebTeamState extends State<WebTeam> {
                 height: size.height * 0.01,
               ),
               TeamCard(
-                imagePath: "assets/teams/WebTeam/Jigmee.jpg",
+                imagePath: "assets/teams/WebTeam/Jigmee.jpeg",
                 name: "Jigmee W. Sherpa",
                 designation: "Member",
                 onPressed1: () => method.launch("tel:+917908546144"),
