@@ -209,21 +209,19 @@ class _EventsScreenState extends State<EventsScreen> {
                 ),
                 Card(
                   child: InkWell(
-                    onTap:()=>showDialog(
-                    context: context,
-                    builder: (builder) => XenPopupCard(
-
-                      body: ListView(
-                        children: [
+                    onTap: () => showDialog(
+                      context: context,
+                      builder: (builder) => XenPopupCard(
+                        body: ListView(
+                          children: [
                             SingleChildScrollView(
-                            child: Padding(
-                            padding: EdgeInsets.only(
-                            left: size.width * 0.002,
-                              right: size.width * 0.002,
-                            ),
-                            child:Column(
-                                  children:[
-
+                              child: Padding(
+                                padding: EdgeInsets.only(
+                                  left: size.width * 0.002,
+                                  right: size.width * 0.002,
+                                ),
+                                child: Column(
+                                  children: [
                                     Center(
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(
@@ -241,7 +239,8 @@ class _EventsScreenState extends State<EventsScreen> {
                                       height: size.height * 0.02,
                                     ),
                                     Column(
-                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
                                       children: [
                                         Text(
                                           repos[index]['title'],
@@ -257,13 +256,15 @@ class _EventsScreenState extends State<EventsScreen> {
                                       ],
                                     ),
                                     Column(
-                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
                                       children: [
                                         Text(
                                           repos[index]['tagline'],
-                                          style: GoogleFonts.berkshireSwash(
-                                            fontWeight: FontWeight.w500,
-                                            fontSize: 24,
+                                          style: GoogleFonts.poppins(
+                                            color: Colors.black54,
+                                            fontStyle: FontStyle.italic,
+                                            fontSize: 18,
                                           ),
                                         ),
                                       ],
@@ -274,31 +275,31 @@ class _EventsScreenState extends State<EventsScreen> {
                                       height: size.height * 0.01,
                                     ),
                                     Container(
-                                            decoration: BoxDecoration(
-                                              color: backgroundColor,
-                                              borderRadius: BorderRadius.circular(
-                                                10,
-                                              ),
-                                            ),
-                                            height: size.height * 0.045,
-                                            width: double.infinity,
-                                            child: Padding(
-                                              padding: EdgeInsets.only(
-                                                left: size.width * 0.02,
-                                              ),
-                                              child:Center(
-                                                child: Text(
-                                                  repos[index]['time'],
-                                                  style: GoogleFonts.poppins(
-                                                    fontSize: 22,
-                                                    fontWeight: FontWeight.w500,
-                                                  ),
-                                                ),
-                                              ),
+                                      decoration: BoxDecoration(
+                                        color: backgroundColor,
+                                        borderRadius: BorderRadius.circular(
+                                          10,
+                                        ),
+                                      ),
+                                      height: size.height * 0.045,
+                                      width: double.infinity,
+                                      child: Padding(
+                                        padding: EdgeInsets.only(
+                                          left: size.width * 0.02,
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            repos[index]['time'],
+                                            style: GoogleFonts.lexendDeca(
+                                              fontSize: 20,
+                                              // fontWeight: FontWeight.w500,
                                             ),
                                           ),
+                                        ),
+                                      ),
+                                    ),
                                     SizedBox(
-                                      height: size.height*0.01,
+                                      height: size.height * 0.01,
                                     ),
 
                                     Container(
@@ -314,172 +315,199 @@ class _EventsScreenState extends State<EventsScreen> {
                                         padding: EdgeInsets.only(
                                           left: size.width * 0.02,
                                         ),
-                                        child:Center(
+                                        child: Center(
                                           child: Text(
-                                            repos[index]['venue'],
-                                            style: GoogleFonts.lexend(
-                                              fontSize: 22,
-                                              fontWeight: FontWeight.w500,
+                                            "@ ${repos[index]['venue']}",
+                                            style: GoogleFonts.lexendDeca(
+                                              fontSize: 20,
+                                              // fontWeight: FontWeight.w500,
                                             ),
                                           ),
                                         ),
                                       ),
                                     ),
                                     SizedBox(
-                                      height: size.height*0.01,
+                                      height: size.height * 0.01,
                                     ),
-
+                                    ElevatedButton(
+                                      onPressed: () =>
+                                          launch(repos[index]['rule_book']),
+                                      style: ElevatedButton.styleFrom(
+                                          backgroundColor: Color.fromARGB(
+                                              255, 255, 201, 108),
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: size.width * 0.29)),
+                                      child: Text(
+                                        "More Details",
+                                        style: GoogleFonts.alumniSans(
+                                          fontSize: 20,
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: size.height * 0.01,
+                                    ),
+                                    ElevatedButton(
+                                      onPressed: () => launch(
+                                          repos[index]['registration_link']),
+                                      style: ElevatedButton.styleFrom(
+                                          backgroundColor:
+                                              const Color(0xFF6CFFB9),
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: size.width * 0.29)),
+                                      child: Text(
+                                        repos[index]['status'],
+                                        style: GoogleFonts.alumniSans(
+                                          fontSize: 24,
+                                          color: Colors.black,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: size.height * 0.01,
+                                    ),
                                     Card(
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(
-                                          12,
+                                          10,
                                         ),
                                         child: Container(
-                                          height: size.height * 0.092,
+                                          height: size.height * 0.095,
                                           width: double.infinity,
                                           decoration: const BoxDecoration(
-                                            gradient: linGrad,
-                                          ),
-                                          child: Padding(
-                                            padding: EdgeInsets.only(top:size.height*0.005,left: size.width*0.02,),
-
-                                              child:Row(
-                                                children: [
-
-                                                  Column(
-                                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                                      children: [
-
-                                                        Text(
-                                                          "text",
-                                                          style: GoogleFonts.poppins(
-                                                            fontSize: size.height*0.02,
-                                                            fontWeight: FontWeight.w500,
-                                                            color: Colors.black,
-                                                          ),
-                                                        ),
-
-                                                        Row(
-                                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                                            mainAxisAlignment: MainAxisAlignment.start,
-                                                            children: [
-                                                              IconButton(
-                                                                onPressed: (){},
-                                                                icon: FaIcon(
-                                                                  FontAwesomeIcons.phone,
-                                                                  color: Colors.black,
-                                                                  size: size.height*0.018,
-                                                                ),
-                                                              ),
-                                                              IconButton(
-                                                                onPressed: (){},
-                                                                icon: Icon(
-                                                                  Icons.mail,
-                                                                  color: Colors.black,
-                                                                  size: size.height*0.018,
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-
-                                                      ],
-                                                    ),
-
-                                                ],
+                                              color: backgroundColor
+                                              // gradient: linearGrad3,
                                               ),
-
+                                          child: Padding(
+                                            padding: EdgeInsets.only(
+                                              top: size.height * 0.005,
+                                              left: size.width * 0.02,
+                                            ),
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  repos[index]['name1'],
+                                                  style: GoogleFonts.poppins(
+                                                    fontSize:
+                                                        size.height * 0.02,
+                                                    fontWeight: FontWeight.w500,
+                                                    color: Colors.black,
+                                                  ),
+                                                ),
+                                                Row(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.center,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.end,
+                                                  children: [
+                                                    IconButton(
+                                                      onPressed: () => launch(
+                                                          "tel:${repos[index]['phone1']}"),
+                                                      icon: FaIcon(
+                                                        FontAwesomeIcons.phone,
+                                                        color: Colors.black,
+                                                        size:
+                                                            size.height * 0.018,
+                                                      ),
+                                                    ),
+                                                    IconButton(
+                                                      onPressed: () => launch(
+                                                          "mailto:${repos[index]['mail1']}"),
+                                                      icon: Icon(
+                                                        Icons.mail,
+                                                        color: Colors.black,
+                                                        size:
+                                                            size.height * 0.018,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
-                                    SizedBox(
-                                      height: size.height*0.01,
-                                    ),
-                                    InkWell(
-                                      onTap: () =>
-                                          launchUrl(repos[index]['registration_link']),
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color:const Color(0xFF6CFFB9),
+                                    if (repos[index]['name2'].isNotEmpty)
+                                      Card(
+                                        child: ClipRRect(
                                           borderRadius: BorderRadius.circular(
                                             10,
                                           ),
-                                        ),
-                                        height: size.height * 0.045,
-                                        width: double.infinity,
-                                        child: Padding(
-                                          padding: EdgeInsets.only(
-                                            left: size.width * 0.02,
-                                          ),
-                                          child: const Center(
-                                            child: Text(
-                                              "Register",
-                                              style: TextStyle(
-                                                fontSize: 25,
-                                                fontWeight: FontWeight.w500,
+                                          child: Container(
+                                            height: size.height * 0.095,
+                                            width: double.infinity,
+                                            decoration: const BoxDecoration(
+                                                color: backgroundColor
+                                                // gradient: linearGrad3,
+                                                ),
+                                            child: Padding(
+                                              padding: EdgeInsets.only(
+                                                top: size.height * 0.005,
+                                                left: size.width * 0.02,
+                                              ),
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    repos[index]['name2'],
+                                                    style: GoogleFonts.poppins(
+                                                      fontSize:
+                                                          size.height * 0.02,
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      color: Colors.black,
+                                                    ),
+                                                  ),
+                                                  Row(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .center,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.end,
+                                                    children: [
+                                                      IconButton(
+                                                        onPressed: () => launch(
+                                                            "tel:${repos[index]['phone2']}"),
+                                                        icon: FaIcon(
+                                                          FontAwesomeIcons
+                                                              .phone,
+                                                          color: Colors.black,
+                                                          size: size.height *
+                                                              0.018,
+                                                        ),
+                                                      ),
+                                                      IconButton(
+                                                        onPressed: () => launch(
+                                                            "mailto:${repos[index]['mail2']}"),
+                                                        icon: Icon(
+                                                          Icons.mail,
+                                                          color: Colors.black,
+                                                          size: size.height *
+                                                              0.018,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ],
                                               ),
                                             ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                    SizedBox(
-                                      height: size.height*0.01,
-                                    ),
-                                    Container(
-                                      decoration: BoxDecoration(
-
-                                        borderRadius: BorderRadius.circular(
-                                          10,
-                                        ),
-                                      ),
-                                      height: size.height * 0.9,
-                                      width: double.infinity,
-                                      child: Padding(
-                                        padding: EdgeInsets.only(
-                                          left: size.width * 0.02,
-                                        ),
-                                        child: Text(
-                                            "Rules- nested",
-                                            style: GoogleFonts.bungeeShade(
-                                              fontSize: 25,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-
-                                      ),
-                                    ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                   ],
-                          ),
-                      ),
-                      ),
-
-
-
-
-
-
-
-
-                        ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                    child:ClipRRect(
+                    child: ClipRRect(
                       borderRadius: BorderRadius.circular(15),
                       child: Container(
                         height: size.height * 0.25,
@@ -504,8 +532,8 @@ class _EventsScreenState extends State<EventsScreen> {
                                     fontSize: 22,
                                     fontWeight: FontWeight.bold,
                                     color: Color.fromARGB(180, 0, 0, 0)
-                                  // fontStyle: FontStyle.
-                                ),
+                                    // fontStyle: FontStyle.
+                                    ),
                               ),
                               SizedBox(
                                 height: size.height * 0.01,
@@ -560,10 +588,12 @@ class _EventsScreenState extends State<EventsScreen> {
                                 height: size.height * 0.015,
                               ),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                         "Time: ${repos[index]['time']}",
@@ -582,8 +612,8 @@ class _EventsScreenState extends State<EventsScreen> {
                                     ],
                                   ),
                                   ElevatedButton(
-                                    onPressed: () =>
-                                        launch(repos[index]['registration_link']),
+                                    onPressed: () => launch(
+                                        repos[index]['registration_link']),
                                     style: ElevatedButton.styleFrom(
                                       backgroundColor: const Color(0xFF6CFFB9),
                                       shape: RoundedRectangleBorder(
@@ -593,7 +623,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                       ),
                                     ),
                                     child: Text(
-                                      "Register",
+                                      repos[index]['status'],
                                       style: GoogleFonts.alumniSans(
                                         fontSize: 24,
                                         color: Colors.black,
@@ -607,7 +637,7 @@ class _EventsScreenState extends State<EventsScreen> {
                         ),
                       ),
                     ),
-                ),
+                  ),
                 ),
               ],
             ),
