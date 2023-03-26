@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const backgroundColor = Color(0xFFE3DFFF);
+const backgroundColor2 =Color(0xFFC2E6E2);
 const dividerColor = Color(0xFFC2DCE5);
 const linearGrad1 = LinearGradient(
   colors: [
