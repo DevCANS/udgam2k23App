@@ -4,7 +4,7 @@ import 'package:udgam2k23/methods/methods.dart';
 import 'package:udgam2k23/screens/about/widgets/team_list.dart';
 import 'package:udgam2k23/widgets/custom_page_route.dart';
 //teams
-import 'package:udgam2k23/screens/teams/core_team.dart';
+import 'package:udgam2k23/screens/teams/core.dart';
 import 'package:udgam2k23/screens/teams/advisory.dart';
 import 'package:udgam2k23/screens/teams/app.dart';
 import 'package:udgam2k23/screens/teams/content.dart';
@@ -120,7 +120,7 @@ class _TeamScreenState extends State<TeamScreen> {
                 teamname: "Conveyance & Discipline Team",
                 onPressed: () => Navigator.of(context).push(
                   CustomPageRoute(
-                    child: const CADTeam(),
+                    child: const ConveyanceTeam(),
                     direction: AxisDirection.left,
                   ),
                 ),
@@ -165,7 +165,7 @@ class _TeamScreenState extends State<TeamScreen> {
                 teamname: "Guest Receiving Team",
                 onPressed: () => Navigator.of(context).push(
                   CustomPageRoute(
-                    child: const GRTeam(),
+                    child: const GuestTeam(),
                     direction: AxisDirection.left,
                   ),
                 ),

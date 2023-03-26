@@ -9,14 +9,14 @@ import 'package:udgam2k23/methods/methods.dart';
 import 'package:udgam2k23/screens/teams/widgets/teamcard.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class WebTeam extends StatefulWidget {
-  const WebTeam({super.key});
+class CoreTeam extends StatefulWidget {
+  const CoreTeam({super.key});
 
   @override
-  State<WebTeam> createState() => _WebTeamState();
+  State<CoreTeam> createState() => _CoreTeamState();
 }
 
-class _WebTeamState extends State<WebTeam> {
+class _CoreTeamState extends State<CoreTeam> {
   late Future<List<dynamic>> futureEvents;
   Methods method = Methods();
   Future<List<dynamic>> fetchRepos(BuildContext context) async {
@@ -71,7 +71,7 @@ class _WebTeamState extends State<WebTeam> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: const [
                       Text(
-                        " web team",
+                        " core team",
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,
@@ -94,7 +94,7 @@ class _WebTeamState extends State<WebTeam> {
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
-                      return TeamCard(teams[18]['web'], context, size);
+                      return TeamCard(teams[0]['core'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

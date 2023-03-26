@@ -1,10 +1,12 @@
 // ignore_for_file: avoid_print
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
+import 'package:udgam2k23/methods/auth_methods.dart';
 import 'package:udgam2k23/methods/methods.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card1.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card2.dart';
@@ -17,6 +19,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final user = FirebaseAuth.instance.currentUser;
+  // if(user != null) {final profilePhoto = user.url;}
   Methods method = Methods();
   List imageList = [
     {"id": "1", "image_path": 'assets/carousel/img1.JPG'},
@@ -72,8 +76,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: const Icon(
-                            Icons.person_3_rounded,
+                          icon: Container(
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                            ),
+                            child: AuthMethods().getProfilePic(),
                           ),
                         ),
                       ],

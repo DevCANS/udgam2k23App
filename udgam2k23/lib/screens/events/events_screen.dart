@@ -32,7 +32,8 @@ class _EventsScreenState extends State<EventsScreen> {
 
   Future<List<dynamic>> fetchRepos(BuildContext context) async {
     final response = await http.get(Uri.parse(
-        'https://raw.githubusercontent.com/saurav-inde/website/main/temp.json'));
+        'https://raw.githubusercontent.com/dee-Rajak/MyPublicRepo/main/Docs/Udgam2k23/jsons/events.json'));
+    // 'https://raw.githubusercontent.com/saurav-inde/website/main/temp.json'));
     if (response.statusCode == 200) {
       final body = json.decode(response.body)['events'];
       return body;
@@ -572,14 +573,6 @@ class _EventsScreenState extends State<EventsScreen> {
                                       // color: Colors.black,
                                       child: Image.network(
                                           repos[index]['imageLink']),
-                                      // decoration: BoxDecoration(
-                                      //   shape: BoxShape.rectangle,
-                                      //   image: DecorationImage(
-                                      //     image: NetworkImage(
-                                      //         repos[index]['imageLink']),
-                                      //     fit: BoxFit.fill,
-                                      //   ),
-                                      // ),
                                     ),
                                   )
                                 ],

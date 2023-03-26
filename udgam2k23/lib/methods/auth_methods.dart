@@ -43,4 +43,16 @@ class AuthMethods {
     }
     return res;
   }
+
+  getProfilePic() {
+    String imageUrl = "";
+    if (_auth.currentUser!.photoURL != null) {
+      imageUrl = _auth.currentUser!.photoURL!;
+      return Image.network(imageUrl);
+    } else {
+      return const Icon(
+        Icons.person_3_rounded,
+      );
+    }
+  }
 }
