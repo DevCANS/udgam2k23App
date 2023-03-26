@@ -12,9 +12,9 @@
 - [x] Event Screen
 - [x] Gallery Screen
 - [x] About Screen
-- [ ] Our Teams Screen and there corresponding Screens
-- [ ] Developers Screen
-- [ ] Guest Screen
+- [x] Our Teams Screen and there corresponding Screens
+- [x] Developers Screen
+- [x] Guest Screen
 - [ ] Sponsors Screen
 - [ ] Splash and Intro Screen
-- [ ] Event Details Card
+- [x] Event Details Card
