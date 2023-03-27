@@ -10,7 +10,6 @@ Widget SponsorCard(List<dynamic> sponsor, BuildContext context, Size size) =>
       itemBuilder: (context, index) {
         final repo = sponsor[index];
         return Padding(
-
           padding: EdgeInsets.only(
             left: size.width * 0.04,
             right: size.width * 0.04,
@@ -21,57 +20,77 @@ Widget SponsorCard(List<dynamic> sponsor, BuildContext context, Size size) =>
               SizedBox(
                 height: size.height * 0.015,
               ),
-              Card(
-                child: ClipRRect(
-
-                  borderRadius: BorderRadius.circular(
-                    12,
-                  ),
-                  child: Container(
-                    margin: EdgeInsets.zero,
-                    height: size.height * 0.21,
-                    width: double.infinity,
-                    decoration: const BoxDecoration(
-                      gradient: linearGrad2,
-                      // color: Color.fromARGB(255, 83, 96, 118)
+              InkWell(
+                onTap: () => launch(repo['sponsor_link']),
+                child: Card(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      12,
                     ),
-                    child: Center(
-                      child: Column(
-                        // mainAxisAlignment: MainAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Container(
-                              color: Colors.black54,
-                              width: double.infinity,
-                              child : Center(child : Text(
-                                sponsor[index]['sponsor_name'],
-                                style: GoogleFonts.poppins(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.white,
+                    child: Container(
+                      margin: EdgeInsets.zero,
+                      height: size.height * 0.25,
+                      width: double.infinity,
+                      decoration: const BoxDecoration(
+                        gradient: radialGrad2,
+                        // color: Color.fromARGB(255, 83, 96, 118)
+                      ),
+                      child: Center(
+                        child: Column(
+                          // mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                                decoration: BoxDecoration(
+                                  color: Color(0xffb9c7ff),
+                                  border: Border(
+                                    bottom: BorderSide(
+                                      color: Color(0xffd78dd1),
+                                      width: 2,
+                                    ),
+                                  ),
                                 ),
-                              ))),
-                          SizedBox(
-                            height: size.height * 0.014,
-                          ),
-
-                          Image.network(
-                            sponsor[index]['sponsor_image'],
-                            height: size.height * 0.09,
-                          ),
-                          SizedBox(
-                            height: size.height * 0.02,
-                          ),
-
-                          Text(
-                            sponsor[index]['sponsor_type'],
-                            style: GoogleFonts.poppins(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                              color: Color.fromARGB(255, 107, 102, 102),
+                                width: double.infinity,
+                                child: Center(
+                                    child: Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 5),
+                                  child: Text(
+                                    sponsor[index]['sponsor_name'],
+                                    style: GoogleFonts.lexendDeca(
+                                      fontSize: size.height * 0.03,
+                                      // fontWeight: FontWeight.w500,
+                                      color: Colors.black87,
+                                    ),
+                                  ),
+                                ))),
+                            SizedBox(
+                              height: size.height * 0.014,
                             ),
-                          ),
-                        ],
+                            Image.network(
+                              sponsor[index]['sponsor_image'],
+                              height: size.height * 0.09,
+                            ),
+                            SizedBox(
+                              height: size.height * 0.04,
+                            ),
+                            Container(
+                              padding: EdgeInsets.symmetric(
+                                  vertical: size.height * 0.005,
+                                  horizontal: size.width * 0.05),
+                              decoration: BoxDecoration(
+                                  color: backgroundColor,
+                                  borderRadius: BorderRadius.circular(5)),
+                              child: Text(
+                                sponsor[index]['sponsor_type'],
+                                style: GoogleFonts.sofia(
+                                  fontSize: size.height * 0.02,
+                                  color: Colors.black54,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

@@ -7,6 +7,7 @@ import 'package:udgam2k23/screens/about/guest_screen.dart';
 import 'package:udgam2k23/screens/about/merchandise_screen.dart';
 import 'package:udgam2k23/screens/about/team_screen.dart';
 import 'package:udgam2k23/screens/developer/dev_screen.dart';
+import 'package:udgam2k23/screens/sponsor/sponsor.dart';
 
 class AboutScreen extends StatefulWidget {
   const AboutScreen({super.key});
@@ -94,7 +95,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       "About Udgam",
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
-                        fontSize: size.height*0.03,
+                        fontSize: size.height * 0.03,
                       ),
                     ),
                     Divider(
@@ -111,7 +112,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   maxLines: 4,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
-                    fontSize: size.height*0.0145,
+                    fontSize: size.height * 0.0145,
                   ),
                 ),
                 SizedBox(
@@ -122,7 +123,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   maxLines: 7,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
-                    fontSize: size.height*0.0145,
+                    fontSize: size.height * 0.0145,
                   ),
                 ),
                 SizedBox(
@@ -162,14 +163,14 @@ class _AboutScreenState extends State<AboutScreen> {
                               Text(
                                 "Pankaj Joshi",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.0125,
+                                  fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
                                 "President",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.012,
+                                  fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -192,14 +193,14 @@ class _AboutScreenState extends State<AboutScreen> {
                               Text(
                                 "Choden Tamang",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.0125,
+                                  fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
                                 "Vice President",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.012,
+                                  fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -222,14 +223,14 @@ class _AboutScreenState extends State<AboutScreen> {
                               Text(
                                 "Aman Prasad",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.0125,
+                                  fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
                                 "Treasurer",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.012,
+                                  fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -260,14 +261,14 @@ class _AboutScreenState extends State<AboutScreen> {
                               Text(
                                 "Aman Saurav",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.0125,
+                                  fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
                                 "Secretary",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.012,
+                                  fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -290,14 +291,14 @@ class _AboutScreenState extends State<AboutScreen> {
                               Text(
                                 "Visakha Kumari",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.0125,
+                                  fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
                                 "General Secretary",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.012,
+                                  fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -320,14 +321,14 @@ class _AboutScreenState extends State<AboutScreen> {
                               Text(
                                 "Sidarth Prasad",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.0125,
+                                  fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Text(
                                 "Joint Secretary",
                                 style: GoogleFonts.poppins(
-                                  fontSize: size.height*0.012,
+                                  fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -351,7 +352,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       "About Contributors",
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
-                        fontSize: size.height*0.028,
+                        fontSize: size.height * 0.028,
                       ),
                     ),
                     Divider(
@@ -395,7 +396,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               "guests",
                               style: TextStyle(
                                 fontFamily: 'Samarkan',
-                                fontSize: size.height*0.03,
+                                fontSize: size.height * 0.03,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
@@ -407,7 +408,13 @@ class _AboutScreenState extends State<AboutScreen> {
                       width: size.width * 0.02,
                     ),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const Sponsors(),
+                          ),
+                        );
+                      },
                       child: Container(
                         height: size.height * 0.085,
                         width: size.width * 0.45,
@@ -426,7 +433,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               "sponsors",
                               style: TextStyle(
                                 fontFamily: 'Samarkan',
-                                fontSize: size.height*0.03,
+                                fontSize: size.height * 0.03,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
@@ -448,7 +455,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       "Our Merchandise",
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
-                        fontSize: size.height*0.028,
+                        fontSize: size.height * 0.028,
                       ),
                     ),
                     Divider(
@@ -491,7 +498,7 @@ class _AboutScreenState extends State<AboutScreen> {
                             "Merchandise",
                             style: TextStyle(
                               fontFamily: 'Samarkan',
-                              fontSize: size.height*0.03,
+                              fontSize: size.height * 0.03,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
@@ -512,7 +519,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       "Our Teams",
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
-                        fontSize: size.height*0.028,
+                        fontSize: size.height * 0.028,
                       ),
                     ),
                     Divider(
@@ -550,12 +557,12 @@ class _AboutScreenState extends State<AboutScreen> {
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children:  [
+                        children: [
                           Text(
                             "Teams",
                             style: TextStyle(
                               fontFamily: 'Samarkan',
-                              fontSize: size.height*0.03,
+                              fontSize: size.height * 0.03,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
@@ -576,7 +583,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       "About Developers",
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
-                        fontSize: size.height*0.028,
+                        fontSize: size.height * 0.028,
                       ),
                     ),
                     Divider(
@@ -619,7 +626,7 @@ class _AboutScreenState extends State<AboutScreen> {
                             "Devs",
                             style: TextStyle(
                               fontFamily: 'Samarkan',
-                              fontSize: size.height*0.03,
+                              fontSize: size.height * 0.03,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
@@ -640,7 +647,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       "visit us",
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
-                        fontSize: size.height*0.028,
+                        fontSize: size.height * 0.028,
                       ),
                     ),
                     Divider(
@@ -660,7 +667,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   maxLines: 7,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
-                    fontSize: size.height*0.0125,
+                    fontSize: size.height * 0.0125,
                   ),
                 ),
                 SizedBox(

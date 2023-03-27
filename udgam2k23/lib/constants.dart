@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 const backgroundColor = Color(0xFFE3DFFF);
-const backgroundColor2 =Color(0xFFC2E6E2);
+const backgroundColor2 = Color(0xFFC2E6E2);
 const dividerColor = Color(0xFFC2DCE5);
 const linearGrad1 = LinearGradient(
   colors: [
@@ -34,6 +34,16 @@ const radialGrad = RadialGradient(
   center: Alignment.center,
   radius: 1.2,
 );
+
+const radialGrad2 = RadialGradient(
+  colors: [
+    Color.fromARGB(255, 255, 182, 255),
+    Color.fromARGB(255, 109, 185, 255)
+  ],
+  center: Alignment.center,
+  radius: 1.2,
+);
+
 const linGrad = LinearGradient(
   colors: [Color(0xffaaccff), Color(0xff9074e2)],
   begin: Alignment.topLeft,
