@@ -126,7 +126,7 @@ class _Screen2State extends State<Screen2> {
                         onPressed: () {
                           Navigator.of(context).push(
                             CustomPageRoute(
-                              child: const AboutScreen(),
+                              child: const Screen3(),
                               direction: AxisDirection.left,
                             ),
                           );
