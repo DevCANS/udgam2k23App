@@ -72,6 +72,7 @@ class _AdvisoryTeamState extends State<AdvisoryTeam> {
                     children: const [
                       Text(
                         " advisory team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

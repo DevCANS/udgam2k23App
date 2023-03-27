@@ -58,10 +58,11 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                     children: [
                                       Text(
                                         team[index]['name'],
+                                        textScaleFactor: 1.0,
                                         style: GoogleFonts.berkshireSwash(
                                           color: Colors.black,
                                           fontWeight: FontWeight.w500,
-                                          fontSize: size.height*0.03,
+                                          fontSize: size.height * 0.03,
                                         ),
                                       ),
                                       Divider(
@@ -75,10 +76,11 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                     children: [
                                       Text(
                                         team[index]['performance'],
+                                        textScaleFactor: 1.0,
                                         style: GoogleFonts.poppins(
                                           color: Colors.black,
                                           fontStyle: FontStyle.italic,
-                                          fontSize: size.height*0.025,
+                                          fontSize: size.height * 0.025,
                                         ),
                                       ),
                                     ],
@@ -104,8 +106,9 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                       child: Center(
                                         child: Text(
                                           "Time:  ${team[index]['time']}",
+                                          textScaleFactor: 1.0,
                                           style: GoogleFonts.benchNine(
-                                            fontSize: size.height*0.026,
+                                            fontSize: size.height * 0.026,
                                             fontWeight: FontWeight.w500,
                                           ),
                                         ),
@@ -132,8 +135,9 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                       child: Center(
                                         child: Text(
                                           "Venue:  ${team[index]['venue']}",
+                                          textScaleFactor: 1.0,
                                           style: GoogleFonts.benchNine(
-                                            fontSize: size.height*0.026,
+                                            fontSize: size.height * 0.026,
                                             fontWeight: FontWeight.w500,
                                           ),
                                         ),
@@ -145,9 +149,10 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                   ),
                                   Text(
                                     team[index]["about"],
+                                    textScaleFactor: 1.0,
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.poppins(
-                                      fontSize: size.height*0.014,
+                                      fontSize: size.height * 0.014,
                                     ),
                                   ),
                                   SizedBox(
@@ -164,8 +169,9 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                       ),
                                       child: Text(
                                         "Learn more",
+                                        textScaleFactor: 1.0,
                                         style: GoogleFonts.alumniSans(
-                                          fontSize: size.height*0.028,
+                                          fontSize: size.height * 0.028,
                                           color: Colors.black,
                                         ),
                                       ),
@@ -220,8 +226,9 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                   children: [
                                     Text(
                                       team[index]['name'],
+                                      textScaleFactor: 1.0,
                                       style: GoogleFonts.raleway(
-                                        fontSize: size.height*0.026,
+                                        fontSize: size.height * 0.026,
                                         fontWeight: FontWeight.w500,
                                         color: Colors.black,
                                       ),
@@ -231,8 +238,9 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                     ),
                                     Text(
                                       team[index]['performance'],
+                                      textScaleFactor: 1.0,
                                       style: GoogleFonts.poppins(
-                                        fontSize: size.height*0.02,
+                                        fontSize: size.height * 0.02,
                                         color: Colors.black,
                                         fontStyle: FontStyle.italic,
                                         // fontWeight: FontWeight.w500,

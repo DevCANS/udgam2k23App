@@ -37,12 +37,14 @@ class _Screen2State extends State<Screen2> {
                 children: [
                   Text(
                     "Welcome to",
+                    textScaleFactor: 1.0,
                     style: GoogleFonts.poppins(
                       fontSize: 14,
                     ),
                   ),
                   const Text(
                     "udgam 2k23",
+                    textScaleFactor: 1.0,
                     style: TextStyle(
                       fontFamily: 'Samarkan',
                       fontSize: 35,
@@ -108,6 +110,7 @@ class _Screen2State extends State<Screen2> {
                   children: [
                     Text(
                       "\u{2022} Witness the incredible cultural performances\n   of north east.",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.poppins(
                         fontSize: 14,
                         color: Colors.white,
@@ -139,6 +142,7 @@ class _Screen2State extends State<Screen2> {
                         ),
                         child: Text(
                           "NEXT   >",
+                          textScaleFactor: 1.0,
                           style: GoogleFonts.poppins(
                             fontSize: 14,
                             color: Colors.black38,

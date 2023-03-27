@@ -20,8 +20,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final user = FirebaseAuth.instance.currentUser;
-  // if(user != null) {final profilePhoto = user.url;}
   Methods method = Methods();
+
   List imageList = [
     {"id": "1", "image_path": 'assets/carousel/img1.JPG'},
     {"id": "2", "image_path": 'assets/carousel/img2.JPG'},
@@ -68,6 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         const Text(
                           " udgam 2k23",
+                          textScaleFactor: 1.0,
                           style: TextStyle(
                             fontFamily: 'Samarkan',
                             fontSize: 30,
@@ -139,6 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     Text(
                       "featured events",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
                         fontSize: 24,
@@ -191,6 +193,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Text(
                       "visit us",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
                         fontSize: 24,
@@ -211,6 +214,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Text(
                   "Stay up-to-date with our latest news and events by subscribing to our newsletter. By subscribing, you'll receive regular updates straight to your inbox about our organization's activities, news, and events.",
                   maxLines: 7,
+                  textScaleFactor: 1.0,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
                     fontSize: 10,

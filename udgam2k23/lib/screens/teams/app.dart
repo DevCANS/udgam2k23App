@@ -72,6 +72,7 @@ class _AppTeamState extends State<AppTeam> {
                     children: const [
                       Text(
                         " app team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

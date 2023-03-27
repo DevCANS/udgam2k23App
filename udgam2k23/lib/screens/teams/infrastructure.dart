@@ -72,6 +72,7 @@ class _InfrastructureTeamState extends State<InfrastructureTeam> {
                     children: const [
                       Text(
                         " infrastucture team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

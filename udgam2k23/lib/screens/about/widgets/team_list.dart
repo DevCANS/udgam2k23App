@@ -44,6 +44,7 @@ class TeamList extends StatelessWidget {
                 ),
                 Text(
                   teamname,
+                  textScaleFactor: 1.0,
                   style: GoogleFonts.lexend(
                     fontSize: 18,
                     fontWeight: FontWeight.w500,

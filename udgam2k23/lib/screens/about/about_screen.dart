@@ -55,6 +55,7 @@ class _AboutScreenState extends State<AboutScreen> {
                       children: const [
                         Text(
                           " about",
+                          textScaleFactor: 1.0,
                           style: TextStyle(
                             fontFamily: 'Samarkan',
                             fontSize: 30,
@@ -93,6 +94,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   children: [
                     Text(
                       "About Udgam",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
                         fontSize: size.height * 0.03,
@@ -110,6 +112,7 @@ class _AboutScreenState extends State<AboutScreen> {
                 Text(
                   "NIT Sikkim has been pioneering to bring about a new way\nof learning in the campus. NIT SIKKM has continuously\nbridged academics to home their skills and talents to\nevolve.",
                   maxLines: 4,
+                  textScaleFactor: 1.0,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
                     fontSize: size.height * 0.0145,
@@ -121,6 +124,7 @@ class _AboutScreenState extends State<AboutScreen> {
                 Text(
                   "UDGAM is the magnificent annual cultural fest of NIT\nSIKKIM, a heart-throb fest of Kanchenjunga, a complete\nfeast for its participants and a matter of ecstasy for all its\nstudents. Offering a vivid blend of music, art, dance,\ntalent and enthralling events of the fest all brimming with\ncraziness, weirdness, wackiness and never ending\nentertainment. A room for roar, laugh and giggle.",
                   maxLines: 7,
+                  textScaleFactor: 1.0,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
                     fontSize: size.height * 0.0145,
@@ -162,6 +166,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               ),
                               Text(
                                 "Pankaj Joshi",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
@@ -169,6 +174,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               ),
                               Text(
                                 "President",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
@@ -192,6 +198,7 @@ class _AboutScreenState extends State<AboutScreen> {
                                   )),
                               Text(
                                 "Choden Tamang",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
@@ -199,6 +206,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               ),
                               Text(
                                 "Vice President",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
@@ -222,6 +230,7 @@ class _AboutScreenState extends State<AboutScreen> {
                                   )),
                               Text(
                                 "Aman Prasad",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
@@ -229,6 +238,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               ),
                               Text(
                                 "Treasurer",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
@@ -260,6 +270,7 @@ class _AboutScreenState extends State<AboutScreen> {
                                   )),
                               Text(
                                 "Aman Saurav",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
@@ -267,6 +278,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               ),
                               Text(
                                 "Secretary",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
@@ -290,6 +302,7 @@ class _AboutScreenState extends State<AboutScreen> {
                                   )),
                               Text(
                                 "Visakha Kumari",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
@@ -297,6 +310,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               ),
                               Text(
                                 "General Secretary",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
@@ -320,6 +334,7 @@ class _AboutScreenState extends State<AboutScreen> {
                                   )),
                               Text(
                                 "Sidarth Prasad",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.0125,
                                   fontWeight: FontWeight.w500,
@@ -327,6 +342,7 @@ class _AboutScreenState extends State<AboutScreen> {
                               ),
                               Text(
                                 "Joint Secretary",
+                                textScaleFactor: 1.0,
                                 style: GoogleFonts.poppins(
                                   fontSize: size.height * 0.012,
                                   fontStyle: FontStyle.italic,
@@ -350,6 +366,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   children: [
                     Text(
                       "About Contributors",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
                         fontSize: size.height * 0.028,
@@ -394,6 +411,7 @@ class _AboutScreenState extends State<AboutScreen> {
                           child: Center(
                             child: Text(
                               "guests",
+                              textScaleFactor: 1.0,
                               style: TextStyle(
                                 fontFamily: 'Samarkan',
                                 fontSize: size.height * 0.03,
@@ -431,6 +449,7 @@ class _AboutScreenState extends State<AboutScreen> {
                           child: Center(
                             child: Text(
                               "sponsors",
+                              textScaleFactor: 1.0,
                               style: TextStyle(
                                 fontFamily: 'Samarkan',
                                 fontSize: size.height * 0.03,
@@ -453,6 +472,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   children: [
                     Text(
                       "Our Merchandise",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
                         fontSize: size.height * 0.028,
@@ -496,6 +516,7 @@ class _AboutScreenState extends State<AboutScreen> {
                         children: [
                           Text(
                             "Merchandise",
+                            textScaleFactor: 1.0,
                             style: TextStyle(
                               fontFamily: 'Samarkan',
                               fontSize: size.height * 0.03,
@@ -517,6 +538,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   children: [
                     Text(
                       "Our Teams",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
                         fontSize: size.height * 0.028,
@@ -560,6 +582,7 @@ class _AboutScreenState extends State<AboutScreen> {
                         children: [
                           Text(
                             "Teams",
+                            textScaleFactor: 1.0,
                             style: TextStyle(
                               fontFamily: 'Samarkan',
                               fontSize: size.height * 0.03,
@@ -581,6 +604,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   children: [
                     Text(
                       "About Developers",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
                         fontSize: size.height * 0.028,
@@ -624,6 +648,7 @@ class _AboutScreenState extends State<AboutScreen> {
                         children: [
                           Text(
                             "Devs",
+                            textScaleFactor: 1.0,
                             style: TextStyle(
                               fontFamily: 'Samarkan',
                               fontSize: size.height * 0.03,
@@ -645,6 +670,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   children: [
                     Text(
                       "visit us",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.berkshireSwash(
                         fontWeight: FontWeight.w500,
                         fontSize: size.height * 0.028,
@@ -665,6 +691,7 @@ class _AboutScreenState extends State<AboutScreen> {
                 Text(
                   "Stay up-to-date with our latest news and events by subscribing to our newsletter. By subscribing, you'll receive regular updates straight to your inbox about our organization's activities, news, and events.",
                   maxLines: 7,
+                  textScaleFactor: 1.0,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.poppins(
                     fontSize: size.height * 0.0125,

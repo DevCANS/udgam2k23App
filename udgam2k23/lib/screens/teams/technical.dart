@@ -72,6 +72,7 @@ class _TechnicalTeamState extends State<TechnicalTeam> {
                     children: const [
                       Text(
                         " Technical team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

@@ -72,6 +72,7 @@ class _SponsorshipTeamState extends State<SponsorshipTeam> {
                     children: const [
                       Text(
                         " sponsorship team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

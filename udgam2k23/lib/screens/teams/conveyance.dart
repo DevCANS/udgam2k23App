@@ -72,6 +72,7 @@ class _ConveyanceTeamState extends State<ConveyanceTeam> {
                     children: const [
                       Text(
                         " conveyance & discipline team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 25,

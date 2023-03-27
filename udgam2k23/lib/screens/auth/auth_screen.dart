@@ -41,12 +41,14 @@ class _AuthScreenState extends State<AuthScreen> {
                 children: [
                   Text(
                     "Welcome to",
+                    textScaleFactor: 1.0,
                     style: GoogleFonts.poppins(
                       fontSize: 14,
                     ),
                   ),
                   const Text(
                     "udgam 2k23",
+                    textScaleFactor: 1.0,
                     style: TextStyle(
                       fontFamily: 'Samarkan',
                       fontSize: 36,
@@ -126,6 +128,7 @@ class _AuthScreenState extends State<AuthScreen> {
                             ),
                             Text(
                               "continue  with  google",
+                              textScaleFactor: 1.0,
                               style: GoogleFonts.lexendDeca(
                                 fontSize: 14,
                                 color: Colors.black45,
