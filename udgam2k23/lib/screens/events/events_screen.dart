@@ -568,6 +568,9 @@ class _EventsScreenState extends State<EventsScreen> {
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 20.0),
                                     child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(5),
+                                      ),
                                       height: size.width * 0.23,
                                       width: size.width * 0.23,
                                       // color: Colors.black,
