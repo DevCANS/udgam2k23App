@@ -83,7 +83,7 @@ class _DeveloperScreenState extends State<DeveloperScreen> {
                       imagePath: "assets/teams/CoreTeam/SS.jpg",
                       name: "Aman Saurav",
                       designation: "Designer & Developer",
-                      tagLine: "Single hu bhai 😁",
+                      tagLine: "Noob 😁",
                       github: () =>
                           method.launch("https://github.com/oops-aman"),
                       instagram: () => method
