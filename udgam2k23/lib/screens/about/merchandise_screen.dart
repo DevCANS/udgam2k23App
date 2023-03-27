@@ -12,8 +12,8 @@ class MerchandiseScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.only(
-            left: size.width * 0.04,
-            right: size.width * 0.04,
+            left: size.width * 0.05,
+            right: size.width * 0.05,
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -50,29 +50,103 @@ class MerchandiseScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: size.height * 0.01,
+                height: size.height * 0.02,
               ),
-              Text(
-                'Hoodie',
-                style: GoogleFonts.lexendDeca(
-                  fontSize: size.height * 0.03,
+
+              Container(
+              decoration: BoxDecoration(
+                color: backgroundColor,
+              ),
+
+              child:Column(
+
+              children: [
+
+                Image.asset('assets/merch/hoodie.png'),
+
+                SizedBox(
+                  height: size.height*0.01,
                 ),
-              ),
-              Container(
-                child: Image.asset('assets/merch/hoodie.png'),
-              ),
+                Text(
+                  "Hoodie",
+                  style: GoogleFonts.bokor(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w500,
+
+                  ),
+                ),
+
+              ],
+            ),
+
+            ),
+
+
+
               SizedBox(
-                height: size.height * 0.01,
+                height: size.height * 0.02,
               ),
               Container(
-                child: Image.asset('assets/merch/sweatshirt.jpg'),
+                decoration: BoxDecoration(
+                  color: backgroundColor,
+                ),
+
+                child:Column(
+
+                  children: [
+
+                    Image.asset('assets/merch/tshirt.jpg'),
+
+                    SizedBox(
+                      height: size.height*0.01,
+                    ),
+                    Text(
+                      "T-Shirt",
+                      style: GoogleFonts.bokor(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+
+                      ),
+                    ),
+
+                  ],
+                ),
+
               ),
+
+
               SizedBox(
-                height: size.height * 0.01,
+                height: size.height * 0.02,
               ),
               Container(
-                child: Image.asset('assets/merch/tshirt.jpg'),
+                decoration: BoxDecoration(
+                  color: backgroundColor,
+                ),
+
+                child:Column(
+
+                  children: [
+
+                    Image.asset('assets/merch/sweatshirt.jpg'),
+
+                    SizedBox(
+                      height: size.height*0.01,
+                    ),
+                    Text(
+                      "Sweatshirt",
+                      style: GoogleFonts.bokor(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+
+                      ),
+                    ),
+
+                  ],
+                ),
+
               ),
+
+
             ],
           ),
         ),
