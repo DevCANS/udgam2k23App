@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/methods.dart';
@@ -78,10 +79,11 @@ class _AboutScreenState extends State<AboutScreen> {
                     child: SizedBox(
                       height: size.height * 0.35,
                       width: size.width * 0.65,
-                      child: Image.asset(
-                        "assets/images/udgam.png",
-                        fit: BoxFit.scaleDown,
-                      ),
+                      child: SvgPicture.asset('assets/images/udgam_logo.svg'),
+                      // child: Image.asset(
+                      //   "assets/images/udgam_logo.svg",
+                      //   fit: BoxFit.scaleDown,
+                      // ),
                     ),
                   ),
                 ),
@@ -740,7 +742,8 @@ class _AboutScreenState extends State<AboutScreen> {
                     ),
                     IconButton(
                       onPressed: () {
-                        method.launch("http://udgam.nitsikkim.ac.in/");
+                        method.launch(
+                            "https://udgam.nitsikkim.ac.in/udgam23/home.php");
                       },
                       icon: const FaIcon(
                         FontAwesomeIcons.globe,

@@ -228,8 +228,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     IconButton(
                       onPressed: () {
-                        method.launch(
-                            "https://www.facebook.com/udgam.nitsikkim/");
+                        method.launch("fb://udgam.nitsikkim/100063968747653");
                       },
                       icon: const FaIcon(
                         FontAwesomeIcons.facebook,
@@ -240,7 +239,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     IconButton(
                       onPressed: () {
                         method.launch(
-                            "https://www.instagram.com/udgam_nitsikkim/");
+                            "instagram://user?username=udgam_nitsikkim");
                       },
                       icon: const FaIcon(
                         FontAwesomeIcons.instagram,
@@ -250,8 +249,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     IconButton(
                       onPressed: () {
-                        method
-                            .launch("https://www.youtube.com/@NITSikkimUdgam");
+                        method.launch(
+                            "https://www.youtube.com/channel/@NITSikkimUdgam");
                       },
                       icon: const FaIcon(
                         FontAwesomeIcons.youtube,
