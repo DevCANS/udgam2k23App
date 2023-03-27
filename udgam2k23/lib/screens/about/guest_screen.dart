@@ -56,7 +56,7 @@ class _GuestScreenState extends State<GuestScreen> {
               child: Container(
                 height: size.height * 0.065,
                 decoration: BoxDecoration(
-                  color: backgroundColor2,
+                  color: backgroundColor,
                   borderRadius: BorderRadius.circular(
                     10,
                   ),

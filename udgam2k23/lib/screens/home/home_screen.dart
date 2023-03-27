@@ -202,6 +202,20 @@ class _HomeScreenState extends State<HomeScreen> {
                 SizedBox(
                   height: size.height * 0.002,
                 ),
+                SizedBox(
+                  height: size.height * 0.01,
+                ),
+                Text(
+                  "Stay up-to-date with our latest news and events by subscribing to our newsletter. By subscribing, you'll receive regular updates straight to your inbox about our organization's activities, news, and events.",
+                  maxLines: 7,
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.poppins(
+                    fontSize: 10,
+                  ),
+                ),
+                SizedBox(
+                  height: size.height * 0.002,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
