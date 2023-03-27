@@ -61,7 +61,7 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                         style: GoogleFonts.berkshireSwash(
                                           color: Colors.black,
                                           fontWeight: FontWeight.w500,
-                                          fontSize: 26,
+                                          fontSize: size.height*0.03,
                                         ),
                                       ),
                                       Divider(
@@ -78,7 +78,7 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                         style: GoogleFonts.poppins(
                                           color: Colors.black,
                                           fontStyle: FontStyle.italic,
-                                          fontSize: 20,
+                                          fontSize: size.height*0.025,
                                         ),
                                       ),
                                     ],
@@ -105,7 +105,7 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                         child: Text(
                                           "Time:  ${team[index]['time']}",
                                           style: GoogleFonts.benchNine(
-                                            fontSize: 22,
+                                            fontSize: size.height*0.026,
                                             fontWeight: FontWeight.w500,
                                           ),
                                         ),
@@ -133,7 +133,7 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                         child: Text(
                                           "Venue:  ${team[index]['venue']}",
                                           style: GoogleFonts.benchNine(
-                                            fontSize: 22,
+                                            fontSize: size.height*0.026,
                                             fontWeight: FontWeight.w500,
                                           ),
                                         ),
@@ -147,7 +147,7 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                     team[index]["about"],
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.poppins(
-                                      fontSize: 12,
+                                      fontSize: size.height*0.014,
                                     ),
                                   ),
                                   SizedBox(
@@ -165,7 +165,7 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                       child: Text(
                                         "Learn more",
                                         style: GoogleFonts.alumniSans(
-                                          fontSize: 24,
+                                          fontSize: size.height*0.028,
                                           color: Colors.black,
                                         ),
                                       ),
@@ -221,7 +221,7 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                     Text(
                                       team[index]['name'],
                                       style: GoogleFonts.raleway(
-                                        fontSize: 22,
+                                        fontSize: size.height*0.026,
                                         fontWeight: FontWeight.w500,
                                         color: Colors.black,
                                       ),
@@ -232,7 +232,7 @@ Widget GuestData(List<dynamic> team, BuildContext context, Size size) =>
                                     Text(
                                       team[index]['performance'],
                                       style: GoogleFonts.poppins(
-                                        fontSize: 16,
+                                        fontSize: size.height*0.02,
                                         color: Colors.black,
                                         fontStyle: FontStyle.italic,
                                         // fontWeight: FontWeight.w500,
