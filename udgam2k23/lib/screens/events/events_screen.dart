@@ -247,7 +247,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                           repos[index]['title'],
                                           style: GoogleFonts.berkshireSwash(
                                             fontWeight: FontWeight.w500,
-                                            fontSize: size.height*0.03,
+                                            fontSize: size.height * 0.03,
                                           ),
                                         ),
                                         Divider(
@@ -265,7 +265,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                           style: GoogleFonts.poppins(
                                             color: Colors.black54,
                                             fontStyle: FontStyle.italic,
-                                            fontSize: size.height*0.025,
+                                            fontSize: size.height * 0.025,
                                           ),
                                         ),
                                       ],
@@ -292,7 +292,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                           child: Text(
                                             repos[index]['time'],
                                             style: GoogleFonts.lexendDeca(
-                                              fontSize: size.height*0.022,
+                                              fontSize: size.height * 0.022,
                                               // fontWeight: FontWeight.w500,
                                             ),
                                           ),
@@ -320,7 +320,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                           child: Text(
                                             "@ ${repos[index]['venue']}",
                                             style: GoogleFonts.lexendDeca(
-                                              fontSize: size.height*0.022,
+                                              fontSize: size.height * 0.022,
                                               // fontWeight: FontWeight.w500,
                                             ),
                                           ),
@@ -330,7 +330,7 @@ class _EventsScreenState extends State<EventsScreen> {
 
                                     SizedBox(
                                       width: double.infinity,
-                                      child:ElevatedButton(
+                                      child: ElevatedButton(
                                         onPressed: () =>
                                             launch(repos[index]['rule_book']),
                                         style: ElevatedButton.styleFrom(
@@ -340,7 +340,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                         child: Text(
                                           "More Details",
                                           style: GoogleFonts.alumniSans(
-                                            fontSize: size.height*0.03,
+                                            fontSize: size.height * 0.03,
                                             color: Colors.black,
                                           ),
                                         ),
@@ -358,7 +358,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                       child: Text(
                                         repos[index]['status'],
                                         style: GoogleFonts.alumniSans(
-                                          fontSize: size.height*0.03,
+                                          fontSize: size.height * 0.03,
                                           color: Colors.black,
                                         ),
                                       ),
@@ -523,12 +523,12 @@ class _EventsScreenState extends State<EventsScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               SizedBox(
-                                height: size.height * 0.02,
+                                height: size.height * 0.01,
                               ),
                               Text(
                                 repos[index]['title'],
                                 style: GoogleFonts.bungeeShade(
-                                    fontSize: size.height*0.025,
+                                    fontSize: size.height * 0.025,
                                     fontWeight: FontWeight.bold,
                                     color: Color.fromARGB(180, 0, 0, 0)
                                     // fontStyle: FontStyle.
@@ -555,7 +555,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                         child: Text(
                                           repos[index]['tagline'],
                                           style: GoogleFonts.poppins(
-                                            fontSize: size.height*0.017,
+                                            fontSize: size.height * 0.017,
                                             fontWeight: FontWeight.w400,
                                           ),
                                         ),
@@ -563,14 +563,14 @@ class _EventsScreenState extends State<EventsScreen> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 20.0),
+                                    padding: EdgeInsets.only(
+                                        left: size.width * 0.05),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(5),
+                                        borderRadius: BorderRadius.circular(10),
                                       ),
-                                      height: size.width * 0.24,
-                                      width: size.width * 0.24,
+                                      height: size.width * 0.25,
+                                      width: size.width * 0.25,
                                       // color: Colors.black,
                                       child: Image.network(
                                           repos[index]['imageLink']),
@@ -579,7 +579,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                 ],
                               ),
                               SizedBox(
-                                height: size.height * 0.015,
+                                height: size.height * 0.01,
                               ),
                               Row(
                                 mainAxisAlignment:
@@ -592,14 +592,14 @@ class _EventsScreenState extends State<EventsScreen> {
                                       Text(
                                         "Time: ${repos[index]['time']}",
                                         style: GoogleFonts.lexend(
-                                          fontSize: size.height*0.015,
+                                          fontSize: size.height * 0.015,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
                                       Text(
                                         "Venue: ",
                                         style: GoogleFonts.lexend(
-                                          fontSize: size.height*0.015,
+                                          fontSize: size.height * 0.015,
                                           fontWeight: FontWeight.w400,
                                         ),
                                       ),
@@ -619,7 +619,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                     child: Text(
                                       repos[index]['status'],
                                       style: GoogleFonts.alumniSans(
-                                        fontSize: size.height*0.026,
+                                        fontSize: size.height * 0.026,
                                         color: Colors.black,
                                       ),
                                     ),

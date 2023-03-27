@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 
 class MerchandiseScreen extends StatelessWidget {
@@ -50,6 +51,27 @@ class MerchandiseScreen extends StatelessWidget {
               ),
               SizedBox(
                 height: size.height * 0.01,
+              ),
+              Text(
+                'Hoodie',
+                style: GoogleFonts.lexendDeca(
+                  fontSize: size.height * 0.03,
+                ),
+              ),
+              Container(
+                child: Image.asset('assets/merch/hoodie.png'),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+              Container(
+                child: Image.asset('assets/merch/sweatshirt.jpg'),
+              ),
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+              Container(
+                child: Image.asset('assets/merch/tshirt.jpg'),
               ),
             ],
           ),

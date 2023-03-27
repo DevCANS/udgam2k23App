@@ -48,6 +48,7 @@ flutter:
     - assets/gallery/
     - assets/auth/
     - assets/images/
+    - assets/merch/
     - assets/featured_events/
     - assets/teams/CoreTeam/
     - assets/teams/AppTeam/

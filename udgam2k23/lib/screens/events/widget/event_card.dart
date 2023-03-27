@@ -2,10 +2,7 @@ import 'package:udgam2k23/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 //not used in app
-
-
 
 class CardScreen extends StatefulWidget {
   const CardScreen({super.key});
@@ -52,7 +49,7 @@ class _CardScreenState extends State<CardScreen> {
                         Text(
                           "Event Name",
                           style: GoogleFonts.bungeeInline(
-                            fontSize: 22,
+                            fontSize: size.height * 0.1,
                           ),
                         ),
                         SizedBox(
