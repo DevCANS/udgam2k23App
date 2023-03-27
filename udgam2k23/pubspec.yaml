@@ -50,23 +50,6 @@ flutter:
     - assets/images/
     - assets/featured_events/
     - assets/teams/CoreTeam/
-    - assets/teams/AdvisoryTeam/
-    - assets/teams/ContentTeam/
-    - assets/teams/CreativityTeam/
-    - assets/teams/CulturalTeam/
-    - assets/teams/DisciplineTeam/
-    - assets/teams/EventTeam/
-    - assets/teams/FinancialTeam/
-    - assets/teams/GuestTeam/
-    - assets/teams/HospitalityTeam/
-    - assets/teams/InfraTeam/
-    - assets/teams/MarketingTeam/
-    - assets/teams/PuTeam/
-    - assets/teams/PhTeam/
-    - assets/teams/MerchTeam/
-    - assets/teams/SponsorTeam/
-    - assets/teams/TechnicalTeam/
-    - assets/teams/WebTeam/
     - assets/teams/AppTeam/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

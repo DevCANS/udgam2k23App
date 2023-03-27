@@ -8,6 +8,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/auth_methods.dart';
 import 'package:udgam2k23/methods/methods.dart';
+import 'package:udgam2k23/screens/events/events_screen.dart';
+import 'package:udgam2k23/screens/gallery/gallery_screen.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card1.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card2.dart';
 
@@ -134,6 +136,73 @@ class _HomeScreenState extends State<HomeScreen> {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
+                    Divider(
+                      color: dividerColor,
+                      thickness: size.height * 0.01,
+                    ),
+                    SizedBox(
+                      height: size.height * 0.02,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const EventsScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Color.fromARGB(205, 182, 225, 255),
+                            ),
+                            height: size.height * 0.18,
+                            width: size.width * 0.4,
+                            child: Center(
+                              child: Text(
+                                "Events",
+                                style: GoogleFonts.pirataOne(
+                                  fontSize: 35,
+                                ),
+                              ),
+                            ),
+                            // color: Colors.black,
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const GalleryScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Color.fromARGB(205, 182, 225, 255),
+                            ),
+                            height: size.height * 0.18,
+                            width: size.width * 0.4,
+                            child: Center(
+                              child: Text(
+                                "Gallery",
+                                style: GoogleFonts.pirataOne(
+                                  fontSize: 35,
+                                ),
+                              ),
+                            ),
+                            // color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: size.height * 0.02,
+                    ),
                     Text(
                       "featured events",
                       style: GoogleFonts.berkshireSwash(
@@ -153,8 +222,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 const FeaturedCard1(
                   text1: "30+ Exciting Events",
                   text2:
-                      "Whether you're an introvert or an extrovert,\nthere's something for everyone at our events.\nJoin us and have a blast",
-                  imagePath: "assets/featured_events/fev1.png",
+                      "Whether you're an introvert or an extrovert, there's something for everyone at our events. Join us and have a blast",
+                  imagePath: "assets/featured_events/collage.png",
                 ),
                 SizedBox(
                   height: size.height * 0.01,
@@ -162,26 +231,26 @@ class _HomeScreenState extends State<HomeScreen> {
                 const FeaturedCard2(
                   text1: "Crazy Fiesta Night!",
                   text2:
-                      "Shake your maracas and dance the night away\nat our Fiesta celebration",
-                  imagePath: "assets/featured_events/fev2.png",
+                      "Shake your maracas and dance the night away at our Fiesta celebration",
+                  imagePath: "assets/featured_events/fiesta.png",
                 ),
                 SizedBox(
                   height: size.height * 0.01,
                 ),
                 const FeaturedCard1(
-                  text1: "30+ Exciting Events",
+                  text1: "FllaaashhMobbbb !!",
                   text2:
-                      "Whether you're an introvert or an extrovert,\nthere's something for everyone at our events.\nJoin us and have a blast",
-                  imagePath: "assets/featured_events/fev1.png",
+                      "Imagine a regular day... then BOOM! A flashmob appears! 🤯 Be part of the excitement!",
+                  imagePath: "assets/featured_events/flashmob.png",
                 ),
                 SizedBox(
                   height: size.height * 0.01,
                 ),
                 const FeaturedCard2(
-                  text1: "Crazy Fiesta Night!",
+                  text1: "YES! EDM Night too",
                   text2:
-                      "Shake your maracas and dance the night away\nat our Fiesta celebration",
-                  imagePath: "assets/featured_events/fev2.png",
+                      "Ready to experience an unforgettable night filled with non-stop dancing and epic beats? Join us for our EDM night! 🎉",
+                  imagePath: "assets/featured_events/edm.png",
                 ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,

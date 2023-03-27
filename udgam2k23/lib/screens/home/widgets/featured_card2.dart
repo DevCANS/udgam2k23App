@@ -49,11 +49,15 @@ class FeaturedCard2 extends StatelessWidget {
                   SizedBox(
                     height: size.height * 0.01,
                   ),
-                  Text(
-                    text2,
-                    style: GoogleFonts.poppins(
-                      fontSize: 8,
-                      fontWeight: FontWeight.w400,
+                  Container(
+                    // color: backgroundColor,
+                    width: size.width * 0.5,
+                    child: Text(
+                      text2,
+                      style: GoogleFonts.poppins(
+                        fontSize: 9,
+                        fontWeight: FontWeight.w400,
+                      ),
                     ),
                   ),
                 ],
