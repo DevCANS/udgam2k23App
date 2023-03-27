@@ -8,8 +8,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/auth_methods.dart';
 import 'package:udgam2k23/methods/methods.dart';
-import 'package:udgam2k23/screens/events/events_screen.dart';
-import 'package:udgam2k23/screens/gallery/gallery_screen.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card1.dart';
 import 'package:udgam2k23/screens/home/widgets/featured_card2.dart';
 
@@ -136,70 +134,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Divider(
-                      color: dividerColor,
-                      thickness: size.height * 0.01,
-                    ),
-                    SizedBox(
-                      height: size.height * 0.02,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        InkWell(
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) => const EventsScreen(),
-                              ),
-                            );
-                          },
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color.fromARGB(205, 182, 225, 255),
-                            ),
-                            height: size.height * 0.18,
-                            width: size.width * 0.4,
-                            child: Center(
-                              child: Text(
-                                "Events",
-                                style: GoogleFonts.pirataOne(
-                                  fontSize: 35,
-                                ),
-                              ),
-                            ),
-                            // color: Colors.black,
-                          ),
-                        ),
-                        InkWell(
-                          onTap: () {
-                            Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (context) => const GalleryScreen(),
-                              ),
-                            );
-                          },
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color.fromARGB(205, 182, 225, 255),
-                            ),
-                            height: size.height * 0.18,
-                            width: size.width * 0.4,
-                            child: Center(
-                              child: Text(
-                                "Gallery",
-                                style: GoogleFonts.pirataOne(
-                                  fontSize: 35,
-                                ),
-                              ),
-                            ),
-                            // color: Colors.black,
-                          ),
-                        ),
-                      ],
-                    ),
                     SizedBox(
                       height: size.height * 0.02,
                     ),
@@ -323,7 +257,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     IconButton(
                       onPressed: () {
-                        method.launch("http://udgam.nitsikkim.ac.in/");
+                        method.launch(
+                            "https://udgam.nitsikkim.ac.in/udgam23/home.php");
                       },
                       icon: const FaIcon(
                         FontAwesomeIcons.globe,
