@@ -70,6 +70,7 @@ class _GuestScreenState extends State<GuestScreen> {
                     children: const [
                       Text(
                         " Guests",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

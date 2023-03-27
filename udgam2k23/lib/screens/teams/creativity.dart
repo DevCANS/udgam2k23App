@@ -72,6 +72,7 @@ class _CreativityTeamState extends State<CreativityTeam> {
                     children: const [
                       Text(
                         " creativity team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

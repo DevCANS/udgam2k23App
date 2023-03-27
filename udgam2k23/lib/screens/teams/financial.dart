@@ -72,6 +72,7 @@ class _FinancialTeamState extends State<FinancialTeam> {
                     children: const [
                       Text(
                         " financial team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

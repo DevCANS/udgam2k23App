@@ -72,6 +72,7 @@ class _MerchandiseTeamState extends State<MerchandiseTeam> {
                     children: const [
                       Text(
                         " merchandise team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

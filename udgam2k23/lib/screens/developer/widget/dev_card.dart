@@ -70,6 +70,7 @@ class DevCard extends StatelessWidget {
                             ),
                             Text(
                               name,
+                              textScaleFactor: 1.0,
                               style: GoogleFonts.silkscreen(
                                 fontSize: 20,
                                 // fontWeight: FontWeight.w500,
@@ -81,6 +82,7 @@ class DevCard extends StatelessWidget {
                             ),
                             Text(
                               designation,
+                              textScaleFactor: 1.0,
                               style: GoogleFonts.vt323(
                                 fontSize: 18,
                                 color: Colors.black45,
@@ -93,6 +95,7 @@ class DevCard extends StatelessWidget {
                             ),
                             Text(
                               "`$tagLine`",
+                              textScaleFactor: 1.0,
                               style: GoogleFonts.vt323(
                                 fontSize: 17,
                                 color: Colors.black87,

@@ -39,6 +39,7 @@ class MerchandiseScreen extends StatelessWidget {
                     children: const [
                       Text(
                         " Our Merchandise",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,
@@ -52,37 +53,27 @@ class MerchandiseScreen extends StatelessWidget {
               SizedBox(
                 height: size.height * 0.02,
               ),
-
               Container(
-              decoration: BoxDecoration(
-                color: backgroundColor,
+                decoration: BoxDecoration(
+                  color: backgroundColor,
+                ),
+                child: Column(
+                  children: [
+                    Image.asset('assets/merch/hoodie.png'),
+                    SizedBox(
+                      height: size.height * 0.01,
+                    ),
+                    Text(
+                      "Hoodie",
+                      textScaleFactor: 1.0,
+                      style: GoogleFonts.bokor(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-
-              child:Column(
-
-              children: [
-
-                Image.asset('assets/merch/hoodie.png'),
-
-                SizedBox(
-                  height: size.height*0.01,
-                ),
-                Text(
-                  "Hoodie",
-                  style: GoogleFonts.bokor(
-                    fontSize: 30,
-                    fontWeight: FontWeight.w500,
-
-                  ),
-                ),
-
-              ],
-            ),
-
-            ),
-
-
-
               SizedBox(
                 height: size.height * 0.02,
               ),
@@ -90,31 +81,23 @@ class MerchandiseScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: backgroundColor,
                 ),
-
-                child:Column(
-
+                child: Column(
                   children: [
-
                     Image.asset('assets/merch/tshirt.jpg'),
-
                     SizedBox(
-                      height: size.height*0.01,
+                      height: size.height * 0.01,
                     ),
                     Text(
                       "T-Shirt",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.bokor(
                         fontSize: 30,
                         fontWeight: FontWeight.w500,
-
                       ),
                     ),
-
                   ],
                 ),
-
               ),
-
-
               SizedBox(
                 height: size.height * 0.02,
               ),
@@ -122,31 +105,23 @@ class MerchandiseScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: backgroundColor,
                 ),
-
-                child:Column(
-
+                child: Column(
                   children: [
-
                     Image.asset('assets/merch/sweatshirt.jpg'),
-
                     SizedBox(
-                      height: size.height*0.01,
+                      height: size.height * 0.01,
                     ),
                     Text(
                       "Sweatshirt",
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.bokor(
                         fontSize: 30,
                         fontWeight: FontWeight.w500,
-
                       ),
                     ),
-
                   ],
                 ),
-
               ),
-
-
             ],
           ),
         ),

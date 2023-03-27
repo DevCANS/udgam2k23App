@@ -72,6 +72,7 @@ class _WebTeamState extends State<WebTeam> {
                     children: const [
                       Text(
                         " web team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,

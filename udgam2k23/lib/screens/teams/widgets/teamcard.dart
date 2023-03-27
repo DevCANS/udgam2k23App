@@ -64,6 +64,7 @@ Widget TeamCard(List<dynamic> team, BuildContext context, Size size) =>
                                   ),
                                   Text(
                                     team[index]['name'],
+                                    textScaleFactor: 1.0,
                                     style: GoogleFonts.poppins(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w500,
@@ -75,6 +76,7 @@ Widget TeamCard(List<dynamic> team, BuildContext context, Size size) =>
                                   ),
                                   Text(
                                     team[index]['designation'],
+                                    textScaleFactor: 1.0,
                                     style: GoogleFonts.poppins(
                                       fontSize: 16,
                                       color: Colors.white,

@@ -34,6 +34,7 @@ class FeaturedCard1 extends StatelessWidget {
                 children: [
                   Text(
                     text1,
+                    textScaleFactor: 1.0,
                     style: GoogleFonts.poppins(
                       fontSize: 20,
                       fontWeight: FontWeight.w500,
@@ -46,6 +47,7 @@ class FeaturedCard1 extends StatelessWidget {
                     width: size.width * 0.5,
                     child: Text(
                       text2,
+                      textScaleFactor: 1.0,
                       style: GoogleFonts.poppins(
                         fontSize: 9,
                         fontWeight: FontWeight.w400,

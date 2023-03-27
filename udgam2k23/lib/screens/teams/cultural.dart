@@ -72,6 +72,7 @@ class _CulturalTeamState extends State<CulturalTeam> {
                     children: const [
                       Text(
                         " cultural team",
+                        textScaleFactor: 1.0,
                         style: TextStyle(
                           fontFamily: 'Samarkan',
                           fontSize: 30,
