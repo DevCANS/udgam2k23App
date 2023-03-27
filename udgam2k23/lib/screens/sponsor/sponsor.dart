@@ -6,7 +6,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/methods.dart';
-import 'package:udgam2k23/screens/sponsors/widget/sponsor_card.dart';
+import 'package:udgam2k23/screens/sponsor/widget/sponsor_card.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Sponsors extends StatefulWidget {
