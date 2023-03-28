@@ -109,7 +109,7 @@ class _DeveloperScreenState extends State<DeveloperScreen> {
                       mail: () =>
                           method.launch("mailto:b210021@nitsikkim.ac.in")),
                   DevCard(
-                      imagePath: "",
+                      imagePath: "assets/teams/AppTeam/Saurav.jpg",
                       name: "Saurav Kumar",
                       designation: "Developer",
                       tagLine: "Coding is my hobbie !",

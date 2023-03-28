@@ -271,7 +271,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                           style: GoogleFonts.poppins(
                                             color: Colors.black54,
                                             fontStyle: FontStyle.italic,
-                                            fontSize: size.height * 0.025,
+                                            fontSize: size.height * 0.018,
                                           ),
                                         ),
                                       ],
@@ -606,7 +606,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                       Text(
                                         "Time: ${repos[index]['time']}",
                                         textScaleFactor: 1.0,
-                                        style: GoogleFonts.lexend(
+                                        style: GoogleFonts.lexendDeca(
                                           fontSize: size.height * 0.015,
                                           fontWeight: FontWeight.w400,
                                         ),
@@ -614,7 +614,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                       Text(
                                         "Venue: ",
                                         textScaleFactor: 1.0,
-                                        style: GoogleFonts.lexend(
+                                        style: GoogleFonts.lexendDeca(
                                           fontSize: size.height * 0.015,
                                           fontWeight: FontWeight.w400,
                                         ),
