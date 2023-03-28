@@ -127,7 +127,7 @@ class _AuthScreenState extends State<AuthScreen> {
                               color: Colors.black54,
                             ),
                             Text(
-                              "continue  with  google",
+                              "continue with google",
                               textScaleFactor: 1.0,
                               style: GoogleFonts.lexendDeca(
                                 fontSize: 14,

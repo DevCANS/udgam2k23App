@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:udgam2k23/constants.dart';
 import 'package:udgam2k23/methods/methods.dart';
@@ -79,7 +78,10 @@ class _AboutScreenState extends State<AboutScreen> {
                     child: SizedBox(
                       height: size.height * 0.35,
                       width: size.width * 0.65,
-                      child: SvgPicture.asset('assets/images/udgam_logo.svg'),
+                      child: Image.asset(
+                        'assets/images/udgam_logo.jpeg',
+                        fit: BoxFit.scaleDown,
+                      ),
                       // child: Image.asset(
                       //   "assets/images/udgam_logo.svg",
                       //   fit: BoxFit.scaleDown,

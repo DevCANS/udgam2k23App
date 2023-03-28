@@ -70,16 +70,18 @@ class _Screen3State extends State<Screen3> {
               ),
               child: Padding(
                 padding: EdgeInsets.only(
-                  right: size.width * 0.08,
-                  top: size.width * 0.84,
+                  left: size.width * 0.05,
+                  right: size.width * 0.05,
+                  top: size.width * 0.8,
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "\u{2022} Witness the incredible cultural performances\n   of north east.",
+                      "\u{2022} Don't miss the chance to be part of a cultural extravaganza\n  that celebrates creativity, expression, and diversity. Our\n  college's cultural event is back, and it's bigger and better\n  than ever before!",
                       textScaleFactor: 1.0,
                       style: GoogleFonts.poppins(
-                        fontSize: 14,
+                        fontSize: 11,
                         color: Colors.white,
                       ),
                     ),
@@ -109,7 +111,7 @@ class _Screen3State extends State<Screen3> {
                         child: Text(
                           "Let's Go   >",
                           textScaleFactor: 1.0,
-                          style: GoogleFonts.poppins(
+                          style: GoogleFonts.lexendDeca(
                             fontSize: 14,
                             color: Colors.black38,
                           ),
@@ -121,36 +123,9 @@ class _Screen3State extends State<Screen3> {
               ),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(
-              left: size.width * 0.15,
-              top: size.height * 0.25,
-            ),
-            child: Column(
-              children: [
-                Image.asset(
-                  "assets/auth/i4.png",
-                ),
-                SizedBox(
-                  height: size.height * 0.015,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    right: size.width * 0.25,
-                  ),
-                  child: Image.asset(
-                    "assets/auth/i5.png",
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(
-                    left: size.width * 0.25,
-                  ),
-                  child: Image.asset(
-                    "assets/auth/i6.png",
-                  ),
-                ),
-              ],
+          Center(
+            child: Image.asset(
+              "assets/auth/S3.png",
             ),
           ),
         ],
