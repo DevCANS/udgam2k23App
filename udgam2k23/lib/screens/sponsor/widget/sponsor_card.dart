@@ -57,6 +57,7 @@ Widget SponsorCard(List<dynamic> sponsor, BuildContext context, Size size) =>
                                       const EdgeInsets.symmetric(vertical: 5),
                                   child: Text(
                                     sponsor[index]['sponsor_name'],
+                                    textScaleFactor: 1,
                                     style: GoogleFonts.lexendDeca(
                                       fontSize: size.height * 0.03,
                                       // fontWeight: FontWeight.w500,
@@ -67,12 +68,17 @@ Widget SponsorCard(List<dynamic> sponsor, BuildContext context, Size size) =>
                             SizedBox(
                               height: size.height * 0.014,
                             ),
-                            Image.network(
-                              sponsor[index]['sponsor_image'],
-                              height: size.height * 0.09,
+                            Container(
+                              color: Colors.amber,
+                              height: size.height * 0.12,
+                              width: size.width * 0.8,
+                              child: Image.network(
+                                sponsor[index]['sponsor_image'],
+                                // height: size.height * 0.09,
+                              ),
                             ),
                             SizedBox(
-                              height: size.height * 0.04,
+                              height: size.height * 0.015,
                             ),
                             Container(
                               padding: EdgeInsets.symmetric(
@@ -83,6 +89,7 @@ Widget SponsorCard(List<dynamic> sponsor, BuildContext context, Size size) =>
                                   borderRadius: BorderRadius.circular(5)),
                               child: Text(
                                 sponsor[index]['sponsor_type'],
+                                textScaleFactor: 1,
                                 style: GoogleFonts.sofia(
                                   fontSize: size.height * 0.02,
                                   color: Colors.black54,
