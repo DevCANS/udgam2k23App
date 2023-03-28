@@ -228,7 +228,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     IconButton(
                       onPressed: () {
-                        method.launch("fb://udgam.nitsikkim/100063968747653");
+                        method.launch(
+                            "https://www.facebook.com/udgam.nitsikkim/");
                       },
                       icon: const FaIcon(
                         FontAwesomeIcons.facebook,

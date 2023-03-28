@@ -723,7 +723,7 @@ class _AboutScreenState extends State<AboutScreen> {
                     IconButton(
                       onPressed: () {
                         method.launch(
-                            "https://www.instagram.com/udgam_nitsikkim/");
+                            "instagram://user?username=udgam_nitsikkim");
                       },
                       icon: const FaIcon(
                         FontAwesomeIcons.instagram,
