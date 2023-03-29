@@ -56,6 +56,7 @@ class MerchandiseScreen extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   color: backgroundColor,
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Column(
                   children: [
@@ -80,6 +81,7 @@ class MerchandiseScreen extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   color: backgroundColor,
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Column(
                   children: [
@@ -103,8 +105,8 @@ class MerchandiseScreen extends StatelessWidget {
               ),
               Container(
                 decoration: BoxDecoration(
-                  color: backgroundColor,
-                ),
+                    color: backgroundColor,
+                    borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   children: [
                     Image.asset('assets/merch/sweatshirt.jpg'),
@@ -121,6 +123,9 @@ class MerchandiseScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: size.height * 0.02,
               ),
             ],
           ),

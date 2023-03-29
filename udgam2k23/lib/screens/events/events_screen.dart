@@ -612,7 +612,7 @@ class _EventsScreenState extends State<EventsScreen> {
                                         ),
                                       ),
                                       Text(
-                                        "Venue: ",
+                                        "Venue:  ${repos[index]['venue']}",
                                         textScaleFactor: 1.0,
                                         style: GoogleFonts.lexendDeca(
                                           fontSize: size.height * 0.015,
