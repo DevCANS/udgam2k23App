@@ -69,7 +69,7 @@ Widget SponsorCard(List<dynamic> sponsor, BuildContext context, Size size) =>
                               height: size.height * 0.014,
                             ),
                             Container(
-                              color: Colors.amber,
+                              // color: Colors.amber,
                               height: size.height * 0.12,
                               width: size.width * 0.8,
                               child: Image.network(
