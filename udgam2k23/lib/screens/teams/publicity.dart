@@ -95,7 +95,7 @@ class _PublicityTeamState extends State<PublicityTeam> {
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
-                      return TeamCard(teams[15]['publicity'], context, size);
+                      return TeamCard(teams[14]['publicity'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

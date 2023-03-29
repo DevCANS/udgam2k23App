@@ -95,7 +95,7 @@ class _GuestTeamState extends State<GuestTeam> {
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
-                      return TeamCard(teams[9]['guest'], context, size);
+                      return TeamCard(teams[8]['guest'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

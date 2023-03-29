@@ -95,7 +95,7 @@ class _MerchandiseTeamState extends State<MerchandiseTeam> {
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
-                      return TeamCard(teams[13]['merchandise'], context, size);
+                      return TeamCard(teams[12]['merchandise'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

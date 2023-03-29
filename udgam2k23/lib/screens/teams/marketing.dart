@@ -95,7 +95,7 @@ class _MarketingTeamState extends State<MarketingTeam> {
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
-                      return TeamCard(teams[12]['marketing'], context, size);
+                      return TeamCard(teams[11]['marketing'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

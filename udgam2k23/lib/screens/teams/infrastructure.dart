@@ -96,7 +96,7 @@ class _InfrastructureTeamState extends State<InfrastructureTeam> {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
                       return TeamCard(
-                          teams[11]['infrastructure'], context, size);
+                          teams[10]['infrastructure'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

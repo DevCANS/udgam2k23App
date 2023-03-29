@@ -95,7 +95,7 @@ class _TechnicalTeamState extends State<TechnicalTeam> {
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
-                      return TeamCard(teams[17]['technical'], context, size);
+                      return TeamCard(teams[16]['technical'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

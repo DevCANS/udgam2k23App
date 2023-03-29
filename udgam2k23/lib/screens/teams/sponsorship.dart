@@ -95,7 +95,7 @@ class _SponsorshipTeamState extends State<SponsorshipTeam> {
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
-                      return TeamCard(teams[16]['sponsorship'], context, size);
+                      return TeamCard(teams[15]['sponsorship'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

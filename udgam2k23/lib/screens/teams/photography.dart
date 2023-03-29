@@ -95,7 +95,7 @@ class _PhotographyTeamState extends State<PhotographyTeam> {
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
-                      return TeamCard(teams[14]['photography'], context, size);
+                      return TeamCard(teams[13]['photography'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

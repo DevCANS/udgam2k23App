@@ -95,7 +95,7 @@ class _WebTeamState extends State<WebTeam> {
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       final teams = snapshot.data!;
-                      return TeamCard(teams[18]['web'], context, size);
+                      return TeamCard(teams[17]['web'], context, size);
                     }
                     return const Center(
                       child: CircularProgressIndicator(

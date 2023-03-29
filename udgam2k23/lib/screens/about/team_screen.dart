@@ -153,15 +153,15 @@ class _TeamScreenState extends State<TeamScreen> {
                   ),
                 ),
               ),
-              TeamList(
-                teamname: "Financial Committee",
-                onPressed: () => Navigator.of(context).push(
-                  CustomPageRoute(
-                    child: const FinancialTeam(),
-                    direction: AxisDirection.left,
-                  ),
-                ),
-              ),
+              // TeamList(
+              //   teamname: "Financial Committee",
+              //   onPressed: () => Navigator.of(context).push(
+              //     CustomPageRoute(
+              //       child: const FinancialTeam(),
+              //       direction: AxisDirection.left,
+              //     ),
+              //   ),
+              // ),
               TeamList(
                 teamname: "Guest Receiving Team",
                 onPressed: () => Navigator.of(context).push(
