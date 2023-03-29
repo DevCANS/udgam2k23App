@@ -42,7 +42,7 @@ Widget SponsorCard(List<dynamic> sponsor, BuildContext context, Size size) =>
                           children: [
                             Container(
                                 decoration: BoxDecoration(
-                                  color: Color(0xffb9c7ff),
+                                  color: Color(0xff00386d),
                                   border: Border(
                                     bottom: BorderSide(
                                       color: Color(0xffd78dd1),
@@ -59,9 +59,9 @@ Widget SponsorCard(List<dynamic> sponsor, BuildContext context, Size size) =>
                                     sponsor[index]['sponsor_name'],
                                     textScaleFactor: 1,
                                     style: GoogleFonts.lexendDeca(
-                                      fontSize: size.height * 0.03,
+                                      fontSize: size.height * 0.025,
                                       // fontWeight: FontWeight.w500,
-                                      color: Colors.black87,
+                                      color: Colors.white,
                                     ),
                                   ),
                                 ))),
