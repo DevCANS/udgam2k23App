@@ -107,7 +107,7 @@ class _DeveloperScreenState extends State<DeveloperScreen> {
                           "https://www.linkedin.com/in/pranshu-jaiswal-14b3021b8/"),
                       phone: () => method.launch("tel:+918250574639"),
                       mail: () =>
-                          method.launch("mailto:b210021@nitsikkim.ac.in")),
+                          method.launch("mailto:b210020@nitsikkim.ac.in")),
                   DevCard(
                       imagePath: "assets/teams/AppTeam/Saurav.jpg",
                       name: "Saurav Kumar",
