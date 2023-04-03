@@ -42,72 +42,74 @@ class _EventTeamState extends State<EventTeam> {
     final Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      body: Center(
-        child: Column(
-          children: [
-            SizedBox(
-              height: size.height * 0.05,
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                left: size.width * 0.01,
-                right: size.width * 0.01,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              SizedBox(
+                height: size.height * 0.05,
               ),
-              child: Container(
-                height: size.height * 0.065,
-                decoration: BoxDecoration(
-                  color: const Color(
-                    0xff00386d,
-                  ),
-                  borderRadius: BorderRadius.circular(
-                    10,
-                  ),
+              Padding(
+                padding: EdgeInsets.only(
+                  left: size.width * 0.01,
+                  right: size.width * 0.01,
                 ),
-                child: Padding(
-                  padding: EdgeInsets.only(
-                    left: size.width * 0.02,
+                child: Container(
+                  height: size.height * 0.065,
+                  decoration: BoxDecoration(
+                    color: const Color(
+                      0xff00386d,
+                    ),
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ),
                   ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: const [
-                      Text(
-                        " event team",
-                        textScaleFactor: 1.0,
-                        style: TextStyle(
-                          fontFamily: 'Samarkan',
-                          fontSize: 30,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
+                  child: Padding(
+                    padding: EdgeInsets.only(
+                      left: size.width * 0.02,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: const [
+                        Text(
+                          " event team",
+                          textScaleFactor: 1.0,
+                          style: TextStyle(
+                            fontFamily: 'Samarkan',
+                            fontSize: 30,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: size.height * 0.01,
-            ),
-            Container(
-              height: size.height * 0.85,
-              child: FutureBuilder<List<dynamic>>(
-                  future: futureEvents,
-                  builder: (context, snapshot) {
-                    if (snapshot.hasData) {
-                      final teams = snapshot.data!;
-                      return TeamCard(teams[7]['event'], context, size);
-                    }
-                    return const Center(
-                      child: CircularProgressIndicator(
-                        backgroundColor: Color(0xFFe3dfff),
-                        valueColor: AlwaysStoppedAnimation(Colors.black45),
-                        strokeWidth: 5,
-                        value: 0.5,
-                      ),
-                    );
-                  }),
-            ),
-          ],
+              SizedBox(
+                height: size.height * 0.01,
+              ),
+              Container(
+                height: size.height * 0.85,
+                child: FutureBuilder<List<dynamic>>(
+                    future: futureEvents,
+                    builder: (context, snapshot) {
+                      if (snapshot.hasData) {
+                        final teams = snapshot.data!;
+                        return TeamCard(teams[7]['event'], context, size);
+                      }
+                      return const Center(
+                        child: CircularProgressIndicator(
+                          backgroundColor: Color(0xFFe3dfff),
+                          valueColor: AlwaysStoppedAnimation(Colors.black45),
+                          strokeWidth: 5,
+                          value: 0.5,
+                        ),
+                      );
+                    }),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -47,7 +47,7 @@ class DevCard extends StatelessWidget {
                   Row(
                     children: [
                       SizedBox(
-                        width: size.width * 0.04,
+                        width: size.width * 0.015,
                       ),
                       CircleAvatar(
                         radius: size.height * 0.06,
@@ -59,7 +59,7 @@ class DevCard extends StatelessWidget {
                       ),
                       Padding(
                         padding: EdgeInsets.only(
-                          left: size.width * 0.04,
+                          left: size.width * 0.03,
                           top: size.height * 0.008,
                         ),
                         child: Column(
@@ -72,7 +72,7 @@ class DevCard extends StatelessWidget {
                               name,
                               textScaleFactor: 1.0,
                               style: GoogleFonts.silkscreen(
-                                fontSize: 20,
+                                fontSize: 17,
                                 // fontWeight: FontWeight.w500,
                                 color: const Color(0xFF161A1D),
                               ),
@@ -108,8 +108,8 @@ class DevCard extends StatelessWidget {
                             ),
                             Padding(
                               padding: EdgeInsets.only(
-                                left: size.width * 0.001,
-                              ),
+                                  left: size.width * 0.001,
+                                  right: size.width * 0.005),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 mainAxisAlignment: MainAxisAlignment.end,

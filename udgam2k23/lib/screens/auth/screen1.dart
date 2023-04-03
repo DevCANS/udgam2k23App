@@ -87,7 +87,7 @@ class _Screen1State extends State<Screen1> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(
-                        left: size.width * 0.68,
+                        left: size.width * 0.65,
                       ),
                       child: ElevatedButton(
                         onPressed: () {
@@ -113,6 +113,7 @@ class _Screen1State extends State<Screen1> {
                         ),
                         child: Text(
                           "NEXT   >",
+                          maxLines: 1,
                           textScaleFactor: 1.0,
                           style: GoogleFonts.lexendDeca(
                             fontSize: 14,

@@ -25,8 +25,8 @@ Widget TeamCard(List<dynamic> team, BuildContext context, Size size) =>
                     12,
                   ),
                   child: Container(
-                    height: size.height * 0.19,
-                    width: double.infinity,
+                    height: size.height * 0.20,
+                    width: size.width * 0.9,
                     decoration: const BoxDecoration(
                       gradient: radialGrad,
                     ),
@@ -35,7 +35,7 @@ Widget TeamCard(List<dynamic> team, BuildContext context, Size size) =>
                         Row(
                           children: [
                             SizedBox(
-                              width: size.width * 0.04,
+                              width: size.width * 0.035,
                             ),
                             Padding(
                               padding: EdgeInsets.only(
@@ -66,7 +66,7 @@ Widget TeamCard(List<dynamic> team, BuildContext context, Size size) =>
                                     team[index]['name'],
                                     textScaleFactor: 1.0,
                                     style: GoogleFonts.poppins(
-                                      fontSize: 20,
+                                      fontSize: 18,
                                       fontWeight: FontWeight.w500,
                                       color: Colors.white,
                                     ),
@@ -86,7 +86,7 @@ Widget TeamCard(List<dynamic> team, BuildContext context, Size size) =>
                                   ),
                                   Padding(
                                     padding: EdgeInsets.only(
-                                      left: size.width * 0.31,
+                                      left: size.width * 0.26,
                                     ),
                                     child: Row(
                                       crossAxisAlignment:

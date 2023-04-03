@@ -78,7 +78,8 @@ class _Screen3State extends State<Screen3> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "\u{2022} Don't miss the chance to be part of a cultural extravaganza\n  that celebrates creativity, expression, and diversity. Our\n  college's cultural event is back, and it's bigger and better\n  than ever before!",
+                      "\u{2022} Don't miss the chance to be part of a cultural extravaganza that celebrates creativity, expression, and diversity.",
+                      maxLines: 3,
                       textScaleFactor: 1.0,
                       style: GoogleFonts.poppins(
                         fontSize: 11,
@@ -109,7 +110,8 @@ class _Screen3State extends State<Screen3> {
                           ),
                         ),
                         child: Text(
-                          "Let's Go   >",
+                          "Let's Go",
+                          maxLines: 1,
                           textScaleFactor: 1.0,
                           style: GoogleFonts.lexendDeca(
                             fontSize: 14,

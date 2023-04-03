@@ -164,8 +164,8 @@ class _AboutScreenState extends State<AboutScreen> {
                                   borderRadius: BorderRadius.circular(100),
                                 ),
                                 child: const CircleAvatar(
-                                  backgroundImage:
-                                      AssetImage("assets/teams/CoreTeam/P.jpg"),
+                                  backgroundImage: AssetImage(
+                                      "assets/teams/CoreTeam/P.jpeg"),
                                 ),
                               ),
                               Text(
