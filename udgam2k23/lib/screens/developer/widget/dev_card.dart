@@ -72,7 +72,7 @@ class DevCard extends StatelessWidget {
                               name,
                               textScaleFactor: 1.0,
                               style: GoogleFonts.silkscreen(
-                                fontSize: 17,
+                                fontSize: 18,
                                 // fontWeight: FontWeight.w500,
                                 color: const Color(0xFF161A1D),
                               ),

@@ -744,8 +744,7 @@ class _AboutScreenState extends State<AboutScreen> {
                     ),
                     IconButton(
                       onPressed: () {
-                        method.launch(
-                            "https://udgam.nitsikkim.ac.in/udgam23/home.php");
+                        method.launch("https://udgam.nitsikkim.ac.in/");
                       },
                       icon: const FaIcon(
                         FontAwesomeIcons.globe,

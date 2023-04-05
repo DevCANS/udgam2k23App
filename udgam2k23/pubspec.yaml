@@ -29,6 +29,7 @@ dependencies:
   insta_image_viewer: ^1.0.2
   url_launcher: ^6.1.10
   xen_popup_card: ^0.0.1
+  rename: any
 
 dev_dependencies:
   flutter_lints: ^2.0.0
